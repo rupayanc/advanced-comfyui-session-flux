@@ -73,10 +73,6 @@ normal_workflows:
     name: basic_redux_workflow.json
     file: ai_influencer/basic_redux_workflow.json
     version: 0
-  - id: vy7ah8l8pfp
-    name: faceswapping.json
-    file: ai_influencer/faceswapping.json
-    version: 0
   - id: fbwskp29nev
     name: flux_fill_inpainting.json
     file: ai_influencer/flux_fill_inpainting.json
