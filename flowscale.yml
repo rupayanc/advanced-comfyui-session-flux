@@ -3,9 +3,17 @@ models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
-workflows: []
+workflows:
+  - id: zqiq7alro6
+    name: aiconomist_flux_advanced_api.json
+    file: ai_influencer/aiconomist_flux_advanced_api.json
+    version: 1
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: 9hg4vmadn3
     name: aiconomist_flux_advanced.json
     file: ai_influencer/aiconomist_flux_advanced.json
-    version: 0
+    version: 1
