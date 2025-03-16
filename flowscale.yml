@@ -55,7 +55,7 @@ workflows:
   - id: n47vdg9ft3r
     name: flux_redux_api.json
     file: iterations/flux_redux_api.json
-    version: 0
+    version: 1
     description: ''
     inputs: []
     outputs: []
@@ -92,4 +92,4 @@ normal_workflows:
   - id: jp3qatd8wo
     name: flux_redux.json
     file: iterations/flux_redux.json
-    version: 0
+    version: 1
