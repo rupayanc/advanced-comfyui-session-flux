@@ -40,7 +40,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                " photograph of a young man sitting in a chair in a room"
+                " photograph of a young man sitting in a chair in a room looking into the camera"
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -180,7 +180,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                173805153958768,
+                173805153958770,
                 "increment",
                 30,
                 1,
@@ -1137,10 +1137,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.7247295000000061,
+            "scale": 1.06107646095001,
             "offset": [
-                96.07090701169072,
-                -249.25095422260165
+                66.80736280380559,
+                -481.1048764406039
             ]
         }
     },
