@@ -1,6 +1,6 @@
 {
-    "last_node_id": 21,
-    "last_link_id": 24,
+    "last_node_id": 25,
+    "last_link_id": 30,
     "nodes": [
         {
             "id": 10,
@@ -14,7 +14,7 @@
                 171.21217346191406
             ],
             "flags": {},
-            "order": 4,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
@@ -28,7 +28,7 @@
                     "name": "CONDITIONING",
                     "type": "CONDITIONING",
                     "links": [
-                        21
+                        26
                     ],
                     "slot_index": 0
                 }
@@ -57,7 +57,7 @@
                 46
             ],
             "flags": {},
-            "order": 8,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -131,15 +131,15 @@
             "id": 13,
             "type": "KSampler",
             "pos": [
-                1182.999267578125,
-                505.6205139160156
+                1407.4722900390625,
+                594.5625610351562
             ],
             "size": [
                 315,
                 262
             ],
             "flags": {},
-            "order": 7,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -203,7 +203,7 @@
             "flags": {
                 "collapsed": false
             },
-            "order": 5,
+            "order": 8,
             "mode": 0,
             "inputs": [
                 {
@@ -282,7 +282,7 @@
                 117.31372833251953
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -312,21 +312,21 @@
             "id": 17,
             "type": "FluxGuidance",
             "pos": [
-                1062.57275390625,
-                347.8865966796875
+                1163.805419921875,
+                860.6885375976562
             ],
             "size": [
                 211.60000610351562,
                 58
             ],
             "flags": {},
-            "order": 6,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
                     "name": "conditioning",
                     "type": "CONDITIONING",
-                    "link": 21
+                    "link": 25
                 }
             ],
             "outputs": [
@@ -352,15 +352,15 @@
             "id": 18,
             "type": "VAELoader",
             "pos": [
-                203.4871063232422,
-                763.713134765625
+                219.7373809814453,
+                747.837890625
             ],
             "size": [
                 262.5147705078125,
                 58
             ],
             "flags": {},
-            "order": 2,
+            "order": 3,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -394,7 +394,7 @@
                 354.56829833984375
             ],
             "flags": {},
-            "order": 9,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -411,6 +411,188 @@
             },
             "widgets_values": [
                 "ComfyUI"
+            ]
+        },
+        {
+            "id": 22,
+            "type": "ReduxAdvanced",
+            "pos": [
+                695.3714599609375,
+                1096.014892578125
+            ],
+            "size": [
+                317.4000244140625,
+                234
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "conditioning",
+                    "type": "CONDITIONING",
+                    "link": 26
+                },
+                {
+                    "name": "style_model",
+                    "type": "STYLE_MODEL",
+                    "link": 27
+                },
+                {
+                    "name": "clip_vision",
+                    "type": "CLIP_VISION",
+                    "link": 28
+                },
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 29
+                },
+                {
+                    "name": "mask",
+                    "type": "MASK",
+                    "shape": 7,
+                    "link": 30
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        25
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": null
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
+                "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
+                "Node name for S&R": "ReduxAdvanced"
+            },
+            "widgets_values": [
+                3,
+                "area",
+                "center crop (square)",
+                1,
+                0.1
+            ]
+        },
+        {
+            "id": 23,
+            "type": "StyleModelLoader",
+            "pos": [
+                246.12612915039062,
+                1115.1473388671875
+            ],
+            "size": [
+                315,
+                58
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "STYLE_MODEL",
+                    "type": "STYLE_MODEL",
+                    "links": [
+                        27
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "StyleModelLoader"
+            },
+            "widgets_values": [
+                "flux1-redux-dev.safetensors"
+            ]
+        },
+        {
+            "id": 24,
+            "type": "CLIPVisionLoader",
+            "pos": [
+                249.62681579589844,
+                1219.4722900390625
+            ],
+            "size": [
+                315,
+                58
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "CLIP_VISION",
+                    "type": "CLIP_VISION",
+                    "links": [
+                        28
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "CLIPVisionLoader"
+            },
+            "widgets_values": [
+                "siglip-so400m-patch14-384.safetensors"
+            ]
+        },
+        {
+            "id": 25,
+            "type": "LoadImage",
+            "pos": [
+                261.3433837890625,
+                1337.1927490234375
+            ],
+            "size": [
+                315,
+                314
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        29
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": [
+                        30
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "example.png",
+                "image"
             ]
         }
     ],
@@ -464,14 +646,6 @@
             "IMAGE"
         ],
         [
-            21,
-            10,
-            0,
-            17,
-            0,
-            "CONDITIONING"
-        ],
-        [
             22,
             15,
             0,
@@ -494,6 +668,54 @@
             14,
             0,
             "CLIP"
+        ],
+        [
+            25,
+            22,
+            0,
+            17,
+            0,
+            "CONDITIONING"
+        ],
+        [
+            26,
+            10,
+            0,
+            22,
+            0,
+            "CONDITIONING"
+        ],
+        [
+            27,
+            23,
+            0,
+            22,
+            1,
+            "STYLE_MODEL"
+        ],
+        [
+            28,
+            24,
+            0,
+            22,
+            2,
+            "CLIP_VISION"
+        ],
+        [
+            29,
+            25,
+            0,
+            22,
+            3,
+            "IMAGE"
+        ],
+        [
+            30,
+            25,
+            1,
+            22,
+            4,
+            "MASK"
         ]
     ],
     "groups": [
@@ -514,10 +736,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.4665073802097333,
+            "scale": 0.620921323059155,
             "offset": [
-                430.25899232923024,
-                411.76513446631145
+                274.9442643833514,
+                -597.2589128308961
             ]
         }
     },
