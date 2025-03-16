@@ -128,7 +128,9 @@
       "description": "The Fast and Simple Face Swap Extension Node for ComfyUI, based on ReActor SD-WebUI Face Swap Extension"
     },
     "nodes": [],
-    "pip": [],
+    "pip": [
+      "onnxruntime"
+    ],
     "apt": [],
     "cached": "False"
   }
