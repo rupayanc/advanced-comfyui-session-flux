@@ -1,7 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": " photograph of a young man sitting in a chair in a room",
+            "text": " photograph of a young man sitting in a chair in a room looking into the camera",
             "clip": [
                 "51",
                 1
@@ -41,7 +41,7 @@
     },
     "31": {
         "inputs": {
-            "seed": 173805153958768,
+            "seed": 173805153958770,
             "steps": 30,
             "cfg": 1,
             "sampler_name": "euler",
