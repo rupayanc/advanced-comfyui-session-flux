@@ -3,8 +3,8 @@
         "inputs": {
             "text": " photograph of a young man sitting in a chair in a room looking into the camera ",
             "clip": [
-                "19",
-                1
+                "16",
+                0
             ]
         },
         "class_type": "CLIPTextEncode",
@@ -48,7 +48,7 @@
             "scheduler": "simple",
             "denoise": 1,
             "model": [
-                "19",
+                "15",
                 0
             ],
             "positive": [
@@ -73,8 +73,8 @@
         "inputs": {
             "text": "",
             "clip": [
-                "19",
-                1
+                "16",
+                0
             ]
         },
         "class_type": "CLIPTextEncode",
@@ -124,25 +124,6 @@
         "class_type": "VAELoader",
         "_meta": {
             "title": "Load VAE"
-        }
-    },
-    "19": {
-        "inputs": {
-            "lora_name": "Flux/amateurphoto-v6-forcu.safetensors",
-            "strength_model": 0.8,
-            "strength_clip": 1,
-            "model": [
-                "15",
-                0
-            ],
-            "clip": [
-                "16",
-                0
-            ]
-        },
-        "class_type": "LoraLoader",
-        "_meta": {
-            "title": "Load LoRA"
         }
     },
     "20": {
