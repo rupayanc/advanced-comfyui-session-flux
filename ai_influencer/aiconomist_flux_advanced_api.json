@@ -1,7 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": "underwater photograph of a young blonde woman gracefully swimming alongside shimmering golden fish. Delicate air bubbles escape her mouth, creating a dreamy, serene atmosphere filled with soft light filtering through the water.",
+            "text": " photograph of a young man sitting in a chair in a room",
             "clip": [
                 "51",
                 1
@@ -41,7 +41,7 @@
     },
     "31": {
         "inputs": {
-            "seed": 173805153958767,
+            "seed": 173805153958768,
             "steps": 30,
             "cfg": 1,
             "sampler_name": "euler",
