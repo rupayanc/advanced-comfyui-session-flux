@@ -1,5 +1,5 @@
 {
-    "last_node_id": 20,
+    "last_node_id": 21,
     "last_link_id": 21,
     "nodes": [
         {
@@ -85,7 +85,8 @@
                 "cnr_id": "comfy-core",
                 "ver": "0.3.15",
                 "Node name for S&R": "VAEDecode"
-            }
+            },
+            "widgets_values": []
         },
         {
             "id": 12,
@@ -431,7 +432,7 @@
                 "Node name for S&R": "LoraLoader"
             },
             "widgets_values": [
-                "flux-RealismLora.safetensors",
+                "Flux/amateurphoto-v6-forcu.safetensors",
                 0.8,
                 1
             ]
