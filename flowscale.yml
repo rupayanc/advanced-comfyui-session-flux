@@ -89,7 +89,3 @@ normal_workflows:
     name: flux_redux.json
     file: iterations/flux_redux.json
     version: 2
-  - id: xuy0tbyj6k
-    name: faceswapping.json
-    file: ai_influencer/faceswapping.json
-    version: 0
