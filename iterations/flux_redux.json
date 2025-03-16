@@ -1,6 +1,6 @@
 {
-    "last_node_id": 25,
-    "last_link_id": 30,
+    "last_node_id": 29,
+    "last_link_id": 41,
     "nodes": [
         {
             "id": 10,
@@ -14,7 +14,7 @@
                 171.21217346191406
             ],
             "flags": {},
-            "order": 7,
+            "order": 9,
             "mode": 0,
             "inputs": [
                 {
@@ -40,7 +40,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                " photograph of a young man sitting in a chair in a room looking into the camera "
+                "a man sitting in a chair in a studio"
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -57,7 +57,7 @@
                 46
             ],
             "flags": {},
-            "order": 12,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
@@ -139,7 +139,7 @@
                 262
             ],
             "flags": {},
-            "order": 11,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -180,7 +180,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                173805153958770,
+                173805153958773,
                 "increment",
                 30,
                 1,
@@ -203,7 +203,7 @@
             "flags": {
                 "collapsed": false
             },
-            "order": 8,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
@@ -320,13 +320,13 @@
                 58
             ],
             "flags": {},
-            "order": 10,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
                     "name": "conditioning",
                     "type": "CONDITIONING",
-                    "link": 25
+                    "link": 40
                 }
             ],
             "outputs": [
@@ -386,15 +386,15 @@
             "id": 20,
             "type": "SaveImage",
             "pos": [
-                1775.31591796875,
-                354.6647644042969
+                1889.472900390625,
+                1077.22509765625
             ],
             "size": [
-                422.87664794921875,
-                354.56829833984375
+                672.0465087890625,
+                743.9383544921875
             ],
             "flags": {},
-            "order": 13,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -425,7 +425,7 @@
                 234
             ],
             "flags": {},
-            "order": 9,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -460,7 +460,7 @@
                     "name": "CONDITIONING",
                     "type": "CONDITIONING",
                     "links": [
-                        25
+                        31
                     ],
                     "slot_index": 0
                 },
@@ -500,7 +500,7 @@
                 58
             ],
             "flags": {},
-            "order": 4,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -508,8 +508,11 @@
                     "name": "STYLE_MODEL",
                     "type": "STYLE_MODEL",
                     "links": [
-                        27
-                    ]
+                        27,
+                        35,
+                        37
+                    ],
+                    "slot_index": 0
                 }
             ],
             "properties": {
@@ -525,15 +528,15 @@
             "id": 24,
             "type": "CLIPVisionLoader",
             "pos": [
-                249.62681579589844,
-                1219.4722900390625
+                245.93714904785156,
+                1215.2315673828125
             ],
             "size": [
                 315,
                 58
             ],
             "flags": {},
-            "order": 5,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -541,8 +544,11 @@
                     "name": "CLIP_VISION",
                     "type": "CLIP_VISION",
                     "links": [
-                        28
-                    ]
+                        28,
+                        36,
+                        38
+                    ],
+                    "slot_index": 0
                 }
             ],
             "properties": {
@@ -558,15 +564,15 @@
             "id": 25,
             "type": "LoadImage",
             "pos": [
-                261.3433837890625,
-                1337.1927490234375
+                627.222412109375,
+                1420.0364990234375
             ],
             "size": [
                 315,
                 314
             ],
             "flags": {},
-            "order": 6,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -591,7 +597,239 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "example.png",
+                "clipspace/clipspace-mask-1373681.299999997.png [input]",
+                "image"
+            ]
+        },
+        {
+            "id": 26,
+            "type": "ReduxAdvanced",
+            "pos": [
+                1132.9417724609375,
+                1098.753173828125
+            ],
+            "size": [
+                317.4000244140625,
+                234
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "conditioning",
+                    "type": "CONDITIONING",
+                    "link": 31
+                },
+                {
+                    "name": "style_model",
+                    "type": "STYLE_MODEL",
+                    "link": 35
+                },
+                {
+                    "name": "clip_vision",
+                    "type": "CLIP_VISION",
+                    "link": 36
+                },
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 33
+                },
+                {
+                    "name": "mask",
+                    "type": "MASK",
+                    "shape": 7,
+                    "link": 34
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        39
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": null
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
+                "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
+                "Node name for S&R": "ReduxAdvanced"
+            },
+            "widgets_values": [
+                3,
+                "area",
+                "center crop (square)",
+                1,
+                0.1
+            ]
+        },
+        {
+            "id": 27,
+            "type": "LoadImage",
+            "pos": [
+                1097.3699951171875,
+                1413.0989990234375
+            ],
+            "size": [
+                315,
+                314
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        33
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": [
+                        34
+                    ],
+                    "slot_index": 1
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "clipspace/clipspace-mask-1391199.3999999985.png [input]",
+                "image"
+            ]
+        },
+        {
+            "id": 28,
+            "type": "ReduxAdvanced",
+            "pos": [
+                1483.55712890625,
+                1093.509765625
+            ],
+            "size": [
+                317.4000244140625,
+                234
+            ],
+            "flags": {},
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "conditioning",
+                    "type": "CONDITIONING",
+                    "link": 39
+                },
+                {
+                    "name": "style_model",
+                    "type": "STYLE_MODEL",
+                    "link": 37
+                },
+                {
+                    "name": "clip_vision",
+                    "type": "CLIP_VISION",
+                    "link": 38
+                },
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 41
+                },
+                {
+                    "name": "mask",
+                    "type": "MASK",
+                    "shape": 7,
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        40
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": null
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
+                "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
+                "Node name for S&R": "ReduxAdvanced"
+            },
+            "widgets_values": [
+                3,
+                "area",
+                "center crop (square)",
+                0.8,
+                0.1
+            ]
+        },
+        {
+            "id": 29,
+            "type": "LoadImage",
+            "pos": [
+                1495.059814453125,
+                1431.614501953125
+            ],
+            "size": [
+                315,
+                314
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        41
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "empty-living-room-leds-color-blow-nobody-inside-living-room-led-lights-116241781.webp",
                 "image"
             ]
         }
@@ -670,14 +908,6 @@
             "CLIP"
         ],
         [
-            25,
-            22,
-            0,
-            17,
-            0,
-            "CONDITIONING"
-        ],
-        [
             26,
             10,
             0,
@@ -716,6 +946,86 @@
             22,
             4,
             "MASK"
+        ],
+        [
+            31,
+            22,
+            0,
+            26,
+            0,
+            "CONDITIONING"
+        ],
+        [
+            33,
+            27,
+            0,
+            26,
+            3,
+            "IMAGE"
+        ],
+        [
+            34,
+            27,
+            1,
+            26,
+            4,
+            "MASK"
+        ],
+        [
+            35,
+            23,
+            0,
+            26,
+            1,
+            "STYLE_MODEL"
+        ],
+        [
+            36,
+            24,
+            0,
+            26,
+            2,
+            "CLIP_VISION"
+        ],
+        [
+            37,
+            23,
+            0,
+            28,
+            1,
+            "STYLE_MODEL"
+        ],
+        [
+            38,
+            24,
+            0,
+            28,
+            2,
+            "CLIP_VISION"
+        ],
+        [
+            39,
+            26,
+            0,
+            28,
+            0,
+            "CONDITIONING"
+        ],
+        [
+            40,
+            28,
+            0,
+            17,
+            0,
+            "CONDITIONING"
+        ],
+        [
+            41,
+            29,
+            0,
+            28,
+            3,
+            "IMAGE"
         ]
     ],
     "groups": [
@@ -736,10 +1046,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.620921323059155,
+            "scale": 0.6830134553650705,
             "offset": [
-                274.9442643833514,
-                -597.2589128308961
+                -44.39238911009013,
+                -762.6141833917778
             ]
         }
     },
