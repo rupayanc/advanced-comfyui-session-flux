@@ -1,7 +1,7 @@
 {
     "10": {
         "inputs": {
-            "text": " photograph of a young man sitting in a chair in a room looking into the camera ",
+            "text": "a man sitting in a chair in a studio",
             "clip": [
                 "16",
                 0
@@ -41,7 +41,7 @@
     },
     "13": {
         "inputs": {
-            "seed": 173805153958770,
+            "seed": 173805153958773,
             "steps": 30,
             "cfg": 1,
             "sampler_name": "euler",
@@ -108,7 +108,7 @@
         "inputs": {
             "guidance": 3.5,
             "conditioning": [
-                "22",
+                "28",
                 0
             ]
         },
@@ -192,7 +192,89 @@
     },
     "25": {
         "inputs": {
-            "image": "example.png",
+            "image": "clipspace/clipspace-mask-1373681.299999997.png [input]",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "26": {
+        "inputs": {
+            "downsampling_factor": 3,
+            "downsampling_function": "area",
+            "mode": "center crop (square)",
+            "weight": 1,
+            "autocrop_margin": 0.1,
+            "conditioning": [
+                "22",
+                0
+            ],
+            "style_model": [
+                "23",
+                0
+            ],
+            "clip_vision": [
+                "24",
+                0
+            ],
+            "image": [
+                "27",
+                0
+            ],
+            "mask": [
+                "27",
+                1
+            ]
+        },
+        "class_type": "ReduxAdvanced",
+        "_meta": {
+            "title": "ReduxAdvanced"
+        }
+    },
+    "27": {
+        "inputs": {
+            "image": "clipspace/clipspace-mask-1391199.3999999985.png [input]",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "28": {
+        "inputs": {
+            "downsampling_factor": 3,
+            "downsampling_function": "area",
+            "mode": "center crop (square)",
+            "weight": 0.8,
+            "autocrop_margin": 0.1,
+            "conditioning": [
+                "26",
+                0
+            ],
+            "style_model": [
+                "23",
+                0
+            ],
+            "clip_vision": [
+                "24",
+                0
+            ],
+            "image": [
+                "29",
+                0
+            ]
+        },
+        "class_type": "ReduxAdvanced",
+        "_meta": {
+            "title": "ReduxAdvanced"
+        }
+    },
+    "29": {
+        "inputs": {
+            "image": "empty-living-room-leds-color-blow-nobody-inside-living-room-led-lights-116241781.webp",
             "upload": "image"
         },
         "class_type": "LoadImage",
