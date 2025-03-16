@@ -95,7 +95,7 @@
     "38": {
         "inputs": {
             "clip_name1": "flux/t5xxl_fp16.safetensors",
-            "clip_name2": "clip_l.safetensors",
+            "clip_name2": "ViT-L-14-TEXT-detail-improved-hiT-GmP-HF.safetensors",
             "type": "flux",
             "device": "default"
         },
@@ -128,7 +128,7 @@
     },
     "43": {
         "inputs": {
-            "clip_name": "CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors"
+            "clip_name": "siglip-so400m-patch14-384.safetensors"
         },
         "class_type": "CLIPVisionLoader",
         "_meta": {
