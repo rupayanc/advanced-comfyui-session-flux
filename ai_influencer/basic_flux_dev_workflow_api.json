@@ -128,7 +128,7 @@
     },
     "19": {
         "inputs": {
-            "lora_name": "flux-RealismLora.safetensors",
+            "lora_name": "Flux/amateurphoto-v6-forcu.safetensors",
             "strength_model": 0.8,
             "strength_clip": 1,
             "model": [
