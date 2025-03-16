@@ -5,15 +5,15 @@ user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
 workflows:
   - id: zqiq7alro6
-    name: aiconomist_flux_advanced_api.json
-    file: ai_influencer/aiconomist_flux_advanced_api.json
-    version: 7
+    name: ai_influencer_improved_api.json
+    file: ai_influencer/ai_influencer_improved_api.json
+    version: 8
     description: ''
     inputs: []
     outputs: []
     skip_preprocess: true
 normal_workflows:
   - id: 9hg4vmadn3
-    name: aiconomist_flux_advanced.json
-    file: ai_influencer/aiconomist_flux_advanced.json
-    version: 7
+    name: ai_influencer_improved.json
+    file: ai_influencer/ai_influencer_improved.json
+    version: 8
