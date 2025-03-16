@@ -108,7 +108,7 @@
         "inputs": {
             "guidance": 3.5,
             "conditioning": [
-                "10",
+                "22",
                 0
             ]
         },
@@ -137,6 +137,67 @@
         "class_type": "SaveImage",
         "_meta": {
             "title": "Save Image"
+        }
+    },
+    "22": {
+        "inputs": {
+            "downsampling_factor": 3,
+            "downsampling_function": "area",
+            "mode": "center crop (square)",
+            "weight": 1,
+            "autocrop_margin": 0.1,
+            "conditioning": [
+                "10",
+                0
+            ],
+            "style_model": [
+                "23",
+                0
+            ],
+            "clip_vision": [
+                "24",
+                0
+            ],
+            "image": [
+                "25",
+                0
+            ],
+            "mask": [
+                "25",
+                1
+            ]
+        },
+        "class_type": "ReduxAdvanced",
+        "_meta": {
+            "title": "ReduxAdvanced"
+        }
+    },
+    "23": {
+        "inputs": {
+            "style_model_name": "flux1-redux-dev.safetensors"
+        },
+        "class_type": "StyleModelLoader",
+        "_meta": {
+            "title": "Load Style Model"
+        }
+    },
+    "24": {
+        "inputs": {
+            "clip_name": "siglip-so400m-patch14-384.safetensors"
+        },
+        "class_type": "CLIPVisionLoader",
+        "_meta": {
+            "title": "Load CLIP Vision"
+        }
+    },
+    "25": {
+        "inputs": {
+            "image": "example.png",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
         }
     }
 }
