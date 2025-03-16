@@ -7,7 +7,7 @@ workflows:
   - id: zqiq7alro6
     name: ai_influencer_improved_api.json
     file: ai_influencer/ai_influencer_improved_api.json
-    version: 8
+    version: 9
     description: ''
     inputs: []
     outputs: []
@@ -64,7 +64,7 @@ normal_workflows:
   - id: 9hg4vmadn3
     name: ai_influencer_improved.json
     file: ai_influencer/ai_influencer_improved.json
-    version: 8
+    version: 9
   - id: 6zfjrn7j0e9
     name: basic_flux_dev_workflow.json
     file: ai_influencer/basic_flux_dev_workflow.json
