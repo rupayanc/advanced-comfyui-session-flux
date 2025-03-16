@@ -1,0 +1,222 @@
+{
+    "10": {
+        "inputs": {
+            "text": " photograph of a young man sitting in a chair in a room looking into the camera ",
+            "clip": [
+                "24",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Positive Prompt)"
+        }
+    },
+    "11": {
+        "inputs": {
+            "samples": [
+                "13",
+                0
+            ],
+            "vae": [
+                "23",
+                0
+            ]
+        },
+        "class_type": "VAEDecode",
+        "_meta": {
+            "title": "VAE Decode"
+        }
+    },
+    "12": {
+        "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+        },
+        "class_type": "EmptySD3LatentImage",
+        "_meta": {
+            "title": "EmptySD3LatentImage"
+        }
+    },
+    "13": {
+        "inputs": {
+            "seed": 173805153958770,
+            "steps": 30,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1,
+            "model": [
+                "24",
+                0
+            ],
+            "positive": [
+                "17",
+                0
+            ],
+            "negative": [
+                "14",
+                0
+            ],
+            "latent_image": [
+                "12",
+                0
+            ]
+        },
+        "class_type": "KSampler",
+        "_meta": {
+            "title": "KSampler"
+        }
+    },
+    "14": {
+        "inputs": {
+            "text": "",
+            "clip": [
+                "24",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Negative Prompt)"
+        }
+    },
+    "15": {
+        "inputs": {
+            "unet_name": "flux1-dev.safetensors",
+            "weight_dtype": "fp8_e4m3fn"
+        },
+        "class_type": "UNETLoader",
+        "_meta": {
+            "title": "Load Diffusion Model"
+        }
+    },
+    "16": {
+        "inputs": {
+            "clip_name1": "flux/t5xxl_fp16.safetensors",
+            "clip_name2": "ViT-L-14-TEXT-detail-improved-hiT-GmP-HF.safetensors",
+            "type": "flux",
+            "device": "default"
+        },
+        "class_type": "DualCLIPLoader",
+        "_meta": {
+            "title": "DualCLIPLoader"
+        }
+    },
+    "17": {
+        "inputs": {
+            "guidance": 3.5,
+            "conditioning": [
+                "20",
+                0
+            ]
+        },
+        "class_type": "FluxGuidance",
+        "_meta": {
+            "title": "FluxGuidance"
+        }
+    },
+    "18": {
+        "inputs": {
+            "style_model_name": "flux1-redux-dev.safetensors"
+        },
+        "class_type": "StyleModelLoader",
+        "_meta": {
+            "title": "Load Style Model"
+        }
+    },
+    "19": {
+        "inputs": {
+            "clip_name": "siglip-so400m-patch14-384.safetensors"
+        },
+        "class_type": "CLIPVisionLoader",
+        "_meta": {
+            "title": "Load CLIP Vision"
+        }
+    },
+    "20": {
+        "inputs": {
+            "downsampling_factor": 3,
+            "downsampling_function": "area",
+            "mode": "center crop (square)",
+            "weight": 0.8,
+            "autocrop_margin": 0.1,
+            "conditioning": [
+                "10",
+                0
+            ],
+            "style_model": [
+                "18",
+                0
+            ],
+            "clip_vision": [
+                "19",
+                0
+            ],
+            "image": [
+                "26",
+                0
+            ],
+            "mask": [
+                "26",
+                1
+            ]
+        },
+        "class_type": "ReduxAdvanced",
+        "_meta": {
+            "title": "ReduxAdvanced"
+        }
+    },
+    "23": {
+        "inputs": {
+            "vae_name": "ae.safetensors"
+        },
+        "class_type": "VAELoader",
+        "_meta": {
+            "title": "Load VAE"
+        }
+    },
+    "24": {
+        "inputs": {
+            "lora_name": "flux-RealismLora.safetensors",
+            "strength_model": 0.8,
+            "strength_clip": 1,
+            "model": [
+                "15",
+                0
+            ],
+            "clip": [
+                "16",
+                0
+            ]
+        },
+        "class_type": "LoraLoader",
+        "_meta": {
+            "title": "Load LoRA"
+        }
+    },
+    "25": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "11",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
+        }
+    },
+    "26": {
+        "inputs": {
+            "image": "clipspace/clipspace-mask-128364.png [input]",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    }
+}
