@@ -15,7 +15,7 @@ workflows:
   - id: jfacaaz3gy
     name: basic_flux_dev_workflow_api.json
     file: ai_influencer/basic_flux_dev_workflow_api.json
-    version: 0
+    version: 1
     description: ''
     inputs: []
     outputs: []
@@ -28,4 +28,4 @@ normal_workflows:
   - id: 6zfjrn7j0e9
     name: basic_flux_dev_workflow.json
     file: ai_influencer/basic_flux_dev_workflow.json
-    version: 0
+    version: 1
