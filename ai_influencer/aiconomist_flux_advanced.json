@@ -282,7 +282,7 @@
                 117.31372833251953
             ],
             "flags": {},
-            "order": 2,
+            "order": 8,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -302,7 +302,7 @@
             },
             "widgets_values": [
                 "flux/t5xxl_fp16.safetensors",
-                "clip_l.safetensors",
+                "ViT-L-14-TEXT-detail-improved-hiT-GmP-HF.safetensors",
                 "flux",
                 "default"
             ]
@@ -359,7 +359,7 @@
                 58
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -395,7 +395,7 @@
                 58
             ],
             "flags": {},
-            "order": 4,
+            "order": 7,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -416,7 +416,7 @@
                 "Node name for S&R": "CLIPVisionLoader"
             },
             "widgets_values": [
-                "CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors"
+                "siglip-so400m-patch14-384.safetensors"
             ]
         },
         {
@@ -659,7 +659,7 @@
                 58
             ],
             "flags": {},
-            "order": 5,
+            "order": 3,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -780,7 +780,7 @@
                 314
             ],
             "flags": {},
-            "order": 6,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -822,7 +822,7 @@
                 314
             ],
             "flags": {},
-            "order": 7,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -865,7 +865,7 @@
                 314
             ],
             "flags": {},
-            "order": 8,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1137,10 +1137,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 1.1671841070450102,
+            "scale": 0.7247295000000061,
             "offset": [
-                50.196793794762456,
-                -551.7050927537238
+                454.52394934075676,
+                -234.20627850221229
             ]
         }
     },
