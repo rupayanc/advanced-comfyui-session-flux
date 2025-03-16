@@ -28,6 +28,14 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: op8c9ysfl7f
+    name: flux_fill_inpainting_api.json
+    file: ai_influencer/flux_fill_inpainting_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: 9hg4vmadn3
     name: ai_influencer_improved.json
@@ -44,4 +52,8 @@ normal_workflows:
   - id: vy7ah8l8pfp
     name: faceswapping.json
     file: ai_influencer/faceswapping.json
+    version: 0
+  - id: fbwskp29nev
+    name: flux_fill_inpainting.json
+    file: ai_influencer/flux_fill_inpainting.json
     version: 0
