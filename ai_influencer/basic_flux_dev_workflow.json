@@ -1,6 +1,6 @@
 {
     "last_node_id": 21,
-    "last_link_id": 21,
+    "last_link_id": 24,
     "nodes": [
         {
             "id": 10,
@@ -14,13 +14,13 @@
                 171.21217346191406
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [
                 {
                     "name": "clip",
                     "type": "CLIP",
-                    "link": 10
+                    "link": 23
                 }
             ],
             "outputs": [
@@ -57,7 +57,7 @@
                 46
             ],
             "flags": {},
-            "order": 9,
+            "order": 8,
             "mode": 0,
             "inputs": [
                 {
@@ -92,15 +92,15 @@
             "id": 12,
             "type": "EmptySD3LatentImage",
             "pos": [
-                602.8140869140625,
-                663.7760620117188
+                667.5281982421875,
+                807.8430786132812
             ],
             "size": [
                 315,
                 106
             ],
             "flags": {},
-            "order": 0,
+            "order": 3,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -131,21 +131,21 @@
             "id": 13,
             "type": "KSampler",
             "pos": [
-                1082.523681640625,
-                324.860595703125
+                1182.999267578125,
+                505.6205139160156
             ],
             "size": [
                 315,
                 262
             ],
             "flags": {},
-            "order": 8,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
                     "name": "model",
                     "type": "MODEL",
-                    "link": 13
+                    "link": 22
                 },
                 {
                     "name": "positive",
@@ -201,15 +201,15 @@
                 164.31304931640625
             ],
             "flags": {
-                "collapsed": true
+                "collapsed": false
             },
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [
                 {
                     "name": "clip",
                     "type": "CLIP",
-                    "link": 17,
+                    "link": 24,
                     "slot_index": 0
                 }
             ],
@@ -247,7 +247,7 @@
                 82
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -255,7 +255,7 @@
                     "name": "MODEL",
                     "type": "MODEL",
                     "links": [
-                        18
+                        22
                     ],
                     "slot_index": 0
                 }
@@ -274,15 +274,15 @@
             "id": 16,
             "type": "DualCLIPLoader",
             "pos": [
-                202.98944091796875,
-                788.0882568359375
+                216.79278564453125,
+                558.9835205078125
             ],
             "size": [
                 326.7498474121094,
                 117.31372833251953
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -290,7 +290,8 @@
                     "name": "CLIP",
                     "type": "CLIP",
                     "links": [
-                        19
+                        23,
+                        24
                     ],
                     "slot_index": 0
                 }
@@ -311,15 +312,15 @@
             "id": 17,
             "type": "FluxGuidance",
             "pos": [
-                1028.533203125,
-                691.1928100585938
+                1062.57275390625,
+                347.8865966796875
             ],
             "size": [
                 211.60000610351562,
                 58
             ],
             "flags": {},
-            "order": 7,
+            "order": 6,
             "mode": 0,
             "inputs": [
                 {
@@ -351,15 +352,15 @@
             "id": 18,
             "type": "VAELoader",
             "pos": [
-                605.7814331054688,
-                853.345947265625
+                203.4871063232422,
+                763.713134765625
             ],
             "size": [
                 262.5147705078125,
                 58
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -382,62 +383,6 @@
             ]
         },
         {
-            "id": 19,
-            "type": "LoraLoader",
-            "pos": [
-                245.67645263671875,
-                580.6221923828125
-            ],
-            "size": [
-                315,
-                126
-            ],
-            "flags": {},
-            "order": 4,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "model",
-                    "type": "MODEL",
-                    "link": 18
-                },
-                {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 19
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "MODEL",
-                    "type": "MODEL",
-                    "links": [
-                        13
-                    ],
-                    "slot_index": 0
-                },
-                {
-                    "name": "CLIP",
-                    "type": "CLIP",
-                    "links": [
-                        10,
-                        17
-                    ],
-                    "slot_index": 1
-                }
-            ],
-            "properties": {
-                "cnr_id": "comfy-core",
-                "ver": "0.3.15",
-                "Node name for S&R": "LoraLoader"
-            },
-            "widgets_values": [
-                "Flux/amateurphoto-v6-forcu.safetensors",
-                0.8,
-                1
-            ]
-        },
-        {
             "id": 20,
             "type": "SaveImage",
             "pos": [
@@ -449,7 +394,7 @@
                 488.1266174316406
             ],
             "flags": {},
-            "order": 10,
+            "order": 9,
             "mode": 0,
             "inputs": [
                 {
@@ -471,14 +416,6 @@
     ],
     "links": [
         [
-            10,
-            19,
-            1,
-            10,
-            0,
-            "CLIP"
-        ],
-        [
             11,
             13,
             0,
@@ -493,14 +430,6 @@
             11,
             1,
             "VAE"
-        ],
-        [
-            13,
-            19,
-            0,
-            13,
-            0,
-            "MODEL"
         ],
         [
             14,
@@ -527,30 +456,6 @@
             "LATENT"
         ],
         [
-            17,
-            19,
-            1,
-            14,
-            0,
-            "CLIP"
-        ],
-        [
-            18,
-            15,
-            0,
-            19,
-            0,
-            "MODEL"
-        ],
-        [
-            19,
-            16,
-            0,
-            19,
-            1,
-            "CLIP"
-        ],
-        [
             20,
             11,
             0,
@@ -565,6 +470,30 @@
             17,
             0,
             "CONDITIONING"
+        ],
+        [
+            22,
+            15,
+            0,
+            13,
+            0,
+            "MODEL"
+        ],
+        [
+            23,
+            16,
+            0,
+            10,
+            0,
+            "CLIP"
+        ],
+        [
+            24,
+            16,
+            0,
+            14,
+            0,
+            "CLIP"
         ]
     ],
     "groups": [],
