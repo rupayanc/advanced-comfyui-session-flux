@@ -1,0 +1,182 @@
+{
+    "10": {
+        "inputs": {
+            "seed": 37001112012213,
+            "steps": 30,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1,
+            "model": [
+                "22",
+                0
+            ],
+            "positive": [
+                "20",
+                0
+            ],
+            "negative": [
+                "20",
+                1
+            ],
+            "latent_image": [
+                "20",
+                2
+            ]
+        },
+        "class_type": "KSampler",
+        "_meta": {
+            "title": "KSampler"
+        }
+    },
+    "11": {
+        "inputs": {
+            "text": "a close-up shot of a young man wearing a black cap, with \"COOL\" written on it",
+            "clip": [
+                "16",
+                0
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "12": {
+        "inputs": {
+            "text": "",
+            "clip": [
+                "16",
+                0
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "13": {
+        "inputs": {
+            "samples": [
+                "10",
+                0
+            ],
+            "vae": [
+                "17",
+                0
+            ]
+        },
+        "class_type": "VAEDecode",
+        "_meta": {
+            "title": "VAE Decode"
+        }
+    },
+    "14": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "13",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
+        }
+    },
+    "15": {
+        "inputs": {
+            "unet_name": "flux1-fill-dev.safetensors",
+            "weight_dtype": "default"
+        },
+        "class_type": "UNETLoader",
+        "_meta": {
+            "title": "Load Diffusion Model"
+        }
+    },
+    "16": {
+        "inputs": {
+            "clip_name1": "clip_l.safetensors",
+            "clip_name2": "flux/t5xxl_fp16.safetensors",
+            "type": "flux",
+            "device": "default"
+        },
+        "class_type": "DualCLIPLoader",
+        "_meta": {
+            "title": "DualCLIPLoader"
+        }
+    },
+    "17": {
+        "inputs": {
+            "vae_name": "ae.safetensors"
+        },
+        "class_type": "VAELoader",
+        "_meta": {
+            "title": "Load VAE"
+        }
+    },
+    "19": {
+        "inputs": {
+            "guidance": 20,
+            "conditioning": [
+                "11",
+                0
+            ]
+        },
+        "class_type": "FluxGuidance",
+        "_meta": {
+            "title": "FluxGuidance"
+        }
+    },
+    "20": {
+        "inputs": {
+            "noise_mask": true,
+            "positive": [
+                "19",
+                0
+            ],
+            "negative": [
+                "12",
+                0
+            ],
+            "vae": [
+                "17",
+                0
+            ],
+            "pixels": [
+                "21",
+                0
+            ],
+            "mask": [
+                "21",
+                1
+            ]
+        },
+        "class_type": "InpaintModelConditioning",
+        "_meta": {
+            "title": "InpaintModelConditioning"
+        }
+    },
+    "21": {
+        "inputs": {
+            "image": "clipspace/clipspace-mask-474867.8999999985.png [input]",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "22": {
+        "inputs": {
+            "model": [
+                "15",
+                0
+            ]
+        },
+        "class_type": "DifferentialDiffusion",
+        "_meta": {
+            "title": "Differential Diffusion"
+        }
+    }
+}
