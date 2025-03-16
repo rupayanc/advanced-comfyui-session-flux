@@ -40,7 +40,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "underwater photograph of a young blonde woman gracefully swimming alongside shimmering golden fish. Delicate air bubbles escape her mouth, creating a dreamy, serene atmosphere filled with soft light filtering through the water."
+                " photograph of a young man sitting in a chair in a room"
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -180,7 +180,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                173805153958767,
+                173805153958768,
                 "increment",
                 30,
                 1,
@@ -1139,8 +1139,8 @@
         "ds": {
             "scale": 0.7247295000000061,
             "offset": [
-                454.52394934075676,
-                -234.20627850221229
+                96.07090701169072,
+                -249.25095422260165
             ]
         }
     },
