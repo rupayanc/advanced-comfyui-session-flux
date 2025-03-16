@@ -20,6 +20,14 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: eka51vruubt
+    name: basic_redux_workflow_api.json
+    file: ai_influencer/basic_redux_workflow_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: 9hg4vmadn3
     name: ai_influencer_improved.json
@@ -29,3 +37,7 @@ normal_workflows:
     name: basic_flux_dev_workflow.json
     file: ai_influencer/basic_flux_dev_workflow.json
     version: 1
+  - id: zwaiwcxw2j
+    name: basic_redux_workflow.json
+    file: ai_influencer/basic_redux_workflow.json
+    version: 0
