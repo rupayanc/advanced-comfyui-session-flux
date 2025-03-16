@@ -52,6 +52,14 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: n47vdg9ft3r
+    name: flux_redux_api.json
+    file: iterations/flux_redux_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: 9hg4vmadn3
     name: ai_influencer_improved.json
@@ -80,4 +88,8 @@ normal_workflows:
   - id: lf16xr49fbh
     name: flux_fill.json
     file: iterations/flux_fill.json
+    version: 0
+  - id: jp3qatd8wo
+    name: flux_redux.json
+    file: iterations/flux_redux.json
     version: 0
