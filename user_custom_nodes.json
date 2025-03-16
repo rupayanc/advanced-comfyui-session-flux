@@ -64,7 +64,9 @@
     },
     "nodes": "ACEPlusConditioning",
     "apt": [],
-    "pip": [],
+    "pip": [
+      "scepter"
+    ],
     "preemptions": [],
     "cached": "False"
   }
