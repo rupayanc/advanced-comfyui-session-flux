@@ -111,5 +111,25 @@
     "pip": [],
     "apt": [],
     "cached": "False"
+  },
+  {
+    "name": "comfyui-reactor-node",
+    "url": "https://github.com/Gourieff/ComfyUI-ReActor",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Gourieff",
+      "title": "comfyui-reactor-node",
+      "reference": "https://github.com/Gourieff/ComfyUI-ReActor",
+      "files": [
+        "https://github.com/Gourieff/ComfyUI-ReActor"
+      ],
+      "install_type": "git-clone",
+      "description": "The Fast and Simple Face Swap Extension Node for ComfyUI, based on ReActor SD-WebUI Face Swap Extension"
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
   }
 ]
