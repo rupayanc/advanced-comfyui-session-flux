@@ -89,7 +89,3 @@ normal_workflows:
     name: flux_redux.json
     file: iterations/flux_redux.json
     version: 2
-  - id: j9mpwrr3dz
-    name: flux_ace++faceswap_sebastiankamph-patreon_v3_(1).json
-    file: ai_influencer/flux_ace++faceswap_sebastiankamph-patreon_v3_(1).json
-    version: 0
