@@ -150,7 +150,7 @@
     },
     "239": {
         "inputs": {
-            "image": "clipspace/clipspace-mask-1272981.6999998093.png [input]",
+            "image": "clipspace/clipspace-mask-57858.png [input]",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -160,7 +160,7 @@
     },
     "240": {
         "inputs": {
-            "image": "FluxUpscaler_00100_.png",
+            "image": "IMG_20210110_114118 (1).jpg",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -249,7 +249,7 @@
     },
     "343": {
         "inputs": {
-            "text": "Retain face. Add long viking hair",
+            "text": "Retain face. short hair with a slight smile without showing teeth",
             "clip": [
                 "341",
                 0
@@ -275,7 +275,7 @@
     },
     "346": {
         "inputs": {
-            "seed": 879290740684335,
+            "seed": 706562283627752,
             "steps": 12,
             "cfg": 1,
             "sampler_name": "euler",
