@@ -440,7 +440,7 @@
                 600.0362548828125
             ],
             "flags": {},
-            "order": 0,
+            "order": 15,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -467,7 +467,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "clipspace/clipspace-mask-1272981.6999998093.png [input]",
+                "clipspace/clipspace-mask-57858.png [input]",
                 "image"
             ],
             "color": "#432",
@@ -485,7 +485,7 @@
                 415.40863037109375
             ],
             "flags": {},
-            "order": 1,
+            "order": 14,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -511,7 +511,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "FluxUpscaler_00100_.png",
+                "IMG_20210110_114118 (1).jpg",
                 "image"
             ],
             "color": "#432",
@@ -529,13 +529,13 @@
                 308.2523193359375
             ],
             "flags": {},
-            "order": 2,
+            "order": 0,
             "mode": 0,
             "inputs": [],
             "outputs": [],
             "properties": {},
             "widgets_values": [
-                "Download comfyui_portrait_lora64.safetensorsÃÂ and place in /models/loras/\nhttps://huggingface.co/ali-vilab/ACE_Plus/tree/main/portrait\n\nDownload Flux Fill fp8ÃÂ and place in /models/diffusion_models/\nhttps://civitai.com/models/969431/flux-fill-fp8\n\nOR Flux Fill fp16 and place in /models/diffusion_models/\nhttps://huggingface.co/black-forest-labs/FLUX.1-Fill-dev\nThis version is more demanding for your hardware\n\nDownload Flux Turbo Lora and place in /models/loras/\nhttps://civitai.com/models/876388/flux1-turbo-alpha\n\nclip_l, t5xxl_fp16 (or t5xxl_fp8) can be downloaded from the model manager\n\nOPTIONAL FOR FUTURE\nDownload comfyui_subject_lora16.safetensors and place in /models/loras/\nhttps://huggingface.co/ali-vilab/ACE_Plus/tree/main/subject\n\nDownload comfyui_local_lora16.safetensors and place in /models/loras/\nhttps://huggingface.co/ali-vilab/ACE_Plus/tree/main/local_editing"
+                "Download comfyui_portrait_lora64.safetensorsÃÂÃÂ and place in /models/loras/\nhttps://huggingface.co/ali-vilab/ACE_Plus/tree/main/portrait\n\nDownload Flux Fill fp8ÃÂÃÂ and place in /models/diffusion_models/\nhttps://civitai.com/models/969431/flux-fill-fp8\n\nOR Flux Fill fp16 and place in /models/diffusion_models/\nhttps://huggingface.co/black-forest-labs/FLUX.1-Fill-dev\nThis version is more demanding for your hardware\n\nDownload Flux Turbo Lora and place in /models/loras/\nhttps://civitai.com/models/876388/flux1-turbo-alpha\n\nclip_l, t5xxl_fp16 (or t5xxl_fp8) can be downloaded from the model manager\n\nOPTIONAL FOR FUTURE\nDownload comfyui_subject_lora16.safetensors and place in /models/loras/\nhttps://huggingface.co/ali-vilab/ACE_Plus/tree/main/subject\n\nDownload comfyui_local_lora16.safetensors and place in /models/loras/\nhttps://huggingface.co/ali-vilab/ACE_Plus/tree/main/local_editing"
             ],
             "color": "#432",
             "bgcolor": "#653"
@@ -554,7 +554,7 @@
             "flags": {
                 "allow_interaction": true
             },
-            "order": 3,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -630,7 +630,7 @@
                 214
             ],
             "flags": {},
-            "order": 17,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
@@ -667,9 +667,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "rgthree-comfy",
+                "aux_id": "rgthree/rgthree-comfy",
                 "ver": "32142fe476878a354dda6e2d4b5ea98960de3ced",
-                "Show Strengths": "Single Strength"
+                "Show Strengths": "Single Strength",
+                "cnr_id": "rgthree-comfy"
             },
             "widgets_values": [
                 null,
@@ -706,7 +707,7 @@
                 58
             ],
             "flags": {},
-            "order": 4,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -743,7 +744,7 @@
                 82
             ],
             "flags": {},
-            "order": 5,
+            "order": 3,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -780,7 +781,7 @@
                 122
             ],
             "flags": {},
-            "order": 6,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -820,7 +821,7 @@
                 172.9056854248047
             ],
             "flags": {},
-            "order": 18,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -846,7 +847,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "Retain face. Add long viking hair"
+                "Retain face. short hair with a slight smile without showing teeth"
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -863,7 +864,7 @@
                 58
             ],
             "flags": {},
-            "order": 20,
+            "order": 19,
             "mode": 0,
             "inputs": [
                 {
@@ -945,7 +946,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                879290740684335,
+                706562283627752,
                 "randomize",
                 12,
                 1,
@@ -970,7 +971,7 @@
             "flags": {
                 "allow_interaction": true
             },
-            "order": 7,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -1001,7 +1002,7 @@
             "flags": {
                 "allow_interaction": true
             },
-            "order": 8,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -1032,7 +1033,7 @@
             "flags": {
                 "allow_interaction": true
             },
-            "order": 9,
+            "order": 7,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -1063,7 +1064,7 @@
             "flags": {
                 "allow_interaction": true
             },
-            "order": 10,
+            "order": 8,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -1171,7 +1172,7 @@
                 218
             ],
             "flags": {},
-            "order": 19,
+            "order": 21,
             "mode": 0,
             "inputs": [
                 {
@@ -1351,7 +1352,7 @@
             "flags": {
                 "collapsed": true
             },
-            "order": 21,
+            "order": 20,
             "mode": 0,
             "inputs": [
                 {
@@ -1391,7 +1392,7 @@
                 252.99032592773438
             ],
             "flags": {},
-            "order": 11,
+            "order": 9,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -1414,11 +1415,11 @@
                 62
             ],
             "flags": {},
-            "order": 12,
+            "order": 10,
             "mode": 0,
             "inputs": [],
             "outputs": [],
-            "title": "Ã°ÂÂÂ",
+            "title": "ÃÂ°ÃÂÃÂÃÂ",
             "properties": {},
             "widgets_values": [
                 "1",
@@ -1439,11 +1440,11 @@
             "flags": {
                 "collapsed": false
             },
-            "order": 13,
+            "order": 11,
             "mode": 0,
             "inputs": [],
             "outputs": [],
-            "title": "Ã°ÂÂÂ",
+            "title": "ÃÂ°ÃÂÃÂÃÂ",
             "properties": {},
             "widgets_values": [
                 "2",
@@ -1464,7 +1465,7 @@
             "flags": {
                 "allow_interaction": true
             },
-            "order": 14,
+            "order": 12,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -1493,7 +1494,7 @@
                 314
             ],
             "flags": {},
-            "order": 16,
+            "order": 18,
             "mode": 0,
             "inputs": [
                 {
@@ -1657,7 +1658,7 @@
                 179.145751953125
             ],
             "flags": {},
-            "order": 15,
+            "order": 13,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -2090,10 +2091,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.9090909090909092,
+            "scale": 0.5644739300537773,
             "offset": [
-                1052.2622733780615,
-                -735.0296406392098
+                548.5957887479243,
+                -623.2290813088886
             ]
         },
         "ue_links": [],
