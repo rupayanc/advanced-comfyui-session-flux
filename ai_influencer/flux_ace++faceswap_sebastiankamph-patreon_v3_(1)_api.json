@@ -193,7 +193,7 @@
             },
             "lora_1": {
                 "on": true,
-                "lora": "Flux/amateurphoto-v6-forcu.safetensors",
+                "lora": "ace_plus/comfyui_portrait_lora64.safetensors",
                 "strength": 1
             },
             "lora_2": {
