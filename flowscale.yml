@@ -63,12 +63,12 @@ workflows:
   - id: 6tourcrmk1j
     name: flux_ace++faceswap_sebastiankamph-patreon_v3_(1)_api.json
     file: ai_influencer/flux_ace++faceswap_sebastiankamph-patreon_v3_(1)_api.json
-    version: 2
+    version: 3
     description: ''
     inputs: []
     outputs: []
     skip_preprocess: true
-    advancedConfig: true
+    advancedConfig: false
 normal_workflows:
   - id: 9hg4vmadn3
     name: ai_influencer_improved.json
@@ -101,4 +101,4 @@ normal_workflows:
   - id: 1946ne1paio
     name: flux_ace++faceswap_sebastiankamph-patreon_v3_(1).json
     file: ai_influencer/flux_ace++faceswap_sebastiankamph-patreon_v3_(1).json
-    version: 2
+    version: 3
