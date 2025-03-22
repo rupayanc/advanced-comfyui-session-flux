@@ -7,12 +7,12 @@ workflows:
   - id: zqiq7alro6
     name: ai_influencer_improved_api.json
     file: ai_influencer/ai_influencer_improved_api.json
-    version: 12
+    version: 13
     description: ''
     inputs: []
     outputs: []
     skip_preprocess: true
-    advancedConfig: false
+    advancedConfig: true
   - id: jfacaaz3gy
     name: basic_flux_dev_workflow_api.json
     file: ai_influencer/basic_flux_dev_workflow_api.json
@@ -74,7 +74,7 @@ normal_workflows:
   - id: 9hg4vmadn3
     name: ai_influencer_improved.json
     file: ai_influencer/ai_influencer_improved.json
-    version: 12
+    version: 13
   - id: 6zfjrn7j0e9
     name: basic_flux_dev_workflow.json
     file: ai_influencer/basic_flux_dev_workflow.json
