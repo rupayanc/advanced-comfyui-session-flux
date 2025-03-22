@@ -1,7 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": "photograph of a young woman carrying a suitcase in a cyberpunk city",
+            "text": "photograph of a young man carrying a suitcase in a living room",
             "clip": [
                 "201",
                 1
@@ -41,7 +41,7 @@
     },
     "31": {
         "inputs": {
-            "seed": 173805153958776,
+            "seed": 173805153958778,
             "steps": 30,
             "cfg": 1,
             "sampler_name": "euler",
@@ -254,7 +254,7 @@
     },
     "155": {
         "inputs": {
-            "image": "ComfyUI_00001_ (5).png",
+            "image": "IMG_20210110_114118 (1).jpg",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -274,7 +274,7 @@
     },
     "157": {
         "inputs": {
-            "image": "ComfyUI_00001_ (9).png",
+            "image": "ComfyUI_temp_tmvtp_00003_.png",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -294,7 +294,7 @@
             "condition": "always",
             "multiple_of": 0,
             "image": [
-                "198",
+                "155",
                 0
             ]
         },
@@ -474,7 +474,7 @@
     },
     "172": {
         "inputs": {
-            "seed": 134708182671469,
+            "seed": 595663820221659,
             "steps": 12,
             "cfg": 1,
             "sampler_name": "euler",
@@ -801,24 +801,6 @@
         "class_type": "GroundingDinoSAMSegment (segment anything)",
         "_meta": {
             "title": "GroundingDinoSAMSegment (segment anything)"
-        }
-    },
-    "198": {
-        "inputs": {
-            "number_of_faces": 1,
-            "scale_factor": 1.5,
-            "shift_factor": 0.45,
-            "start_index": 0,
-            "max_faces_per_image": 50,
-            "aspect_ratio": "1:1",
-            "image": [
-                "155",
-                0
-            ]
-        },
-        "class_type": "AutoCropFaces",
-        "_meta": {
-            "title": "Auto Crop Faces"
         }
     },
     "201": {
