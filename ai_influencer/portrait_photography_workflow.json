@@ -1,6 +1,6 @@
 {
-    "last_node_id": 163,
-    "last_link_id": 306,
+    "last_node_id": 167,
+    "last_link_id": 313,
     "nodes": [
         {
             "id": 6,
@@ -76,7 +76,9 @@
                     "name": "IMAGE",
                     "type": "IMAGE",
                     "links": [
-                        288
+                        288,
+                        309,
+                        312
                     ],
                     "slot_index": 0
                 }
@@ -180,7 +182,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                173805153958771,
+                173805153958772,
                 "increment",
                 30,
                 1,
@@ -725,7 +727,7 @@
                 314
             ],
             "flags": {},
-            "order": 7,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -767,7 +769,7 @@
                 314
             ],
             "flags": {},
-            "order": 8,
+            "order": 7,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -809,7 +811,7 @@
                 314
             ],
             "flags": {},
-            "order": 9,
+            "order": 8,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -908,7 +910,7 @@
                 82
             ],
             "flags": {},
-            "order": 10,
+            "order": 9,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -917,8 +919,10 @@
                     "type": "SAM_MODEL",
                     "links": [
                         297,
-                        302
-                    ]
+                        302,
+                        307
+                    ],
+                    "slot_index": 0
                 }
             ],
             "properties": {
@@ -943,7 +947,7 @@
                 58
             ],
             "flags": {},
-            "order": 6,
+            "order": 10,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -952,7 +956,8 @@
                     "type": "GROUNDING_DINO_MODEL",
                     "links": [
                         298,
-                        303
+                        303,
+                        308
                     ],
                     "slot_index": 0
                 }
@@ -1082,6 +1087,197 @@
                 "Node name for S&R": "PreviewImage"
             },
             "widgets_values": []
+        },
+        {
+            "id": 164,
+            "type": "GroundingDinoSAMSegment (segment anything)",
+            "pos": [
+                1604.798095703125,
+                1074.7894287109375
+            ],
+            "size": [
+                352.79998779296875,
+                124.85401153564453
+            ],
+            "flags": {},
+            "order": 24,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "sam_model",
+                    "type": "SAM_MODEL",
+                    "link": 307
+                },
+                {
+                    "name": "grounding_dino_model",
+                    "type": "GROUNDING_DINO_MODEL",
+                    "link": 308
+                },
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 309
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        310
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": [
+                        311
+                    ],
+                    "slot_index": 1
+                }
+            ],
+            "properties": {
+                "aux_id": "storyicon/comfyui_segment_anything",
+                "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
+                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)"
+            },
+            "widgets_values": [
+                "face, hair",
+                0.35000000000000003
+            ]
+        },
+        {
+            "id": 165,
+            "type": "PreviewImage",
+            "pos": [
+                1674.20751953125,
+                1349.4000244140625
+            ],
+            "size": [
+                210,
+                246
+            ],
+            "flags": {},
+            "order": 25,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 310
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "PreviewImage"
+            }
+        },
+        {
+            "id": 166,
+            "type": "InpaintCrop",
+            "pos": [
+                2044.787841796875,
+                984.844482421875
+            ],
+            "size": [
+                443.4000244140625,
+                314
+            ],
+            "flags": {},
+            "order": 26,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 312
+                },
+                {
+                    "name": "mask",
+                    "type": "MASK",
+                    "link": 311
+                },
+                {
+                    "name": "optional_context_mask",
+                    "type": "MASK",
+                    "shape": 7,
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "stitch",
+                    "type": "STITCH",
+                    "links": null
+                },
+                {
+                    "name": "cropped_image",
+                    "type": "IMAGE",
+                    "links": [
+                        313
+                    ],
+                    "slot_index": 1
+                },
+                {
+                    "name": "cropped_mask",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "lquesada/ComfyUI-Inpaint-CropAndStitch",
+                "ver": "5ee364f1423daa78a47001963d96fe985551734c",
+                "Node name for S&R": "InpaintCrop"
+            },
+            "widgets_values": [
+                20,
+                1,
+                true,
+                16,
+                false,
+                16,
+                "bicubic",
+                "forced size",
+                1024,
+                1024,
+                1,
+                512,
+                512,
+                768,
+                768,
+                32
+            ]
+        },
+        {
+            "id": 167,
+            "type": "PreviewImage",
+            "pos": [
+                2620.94287109375,
+                930.308837890625
+            ],
+            "size": [
+                210,
+                246
+            ],
+            "flags": {},
+            "order": 27,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 313
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "PreviewImage"
+            }
         }
     ],
     "links": [
@@ -1340,6 +1536,62 @@
             45,
             4,
             "MASK"
+        ],
+        [
+            307,
+            159,
+            0,
+            164,
+            0,
+            "SAM_MODEL"
+        ],
+        [
+            308,
+            160,
+            0,
+            164,
+            1,
+            "GROUNDING_DINO_MODEL"
+        ],
+        [
+            309,
+            8,
+            0,
+            164,
+            2,
+            "IMAGE"
+        ],
+        [
+            310,
+            164,
+            0,
+            165,
+            0,
+            "IMAGE"
+        ],
+        [
+            311,
+            164,
+            1,
+            166,
+            1,
+            "MASK"
+        ],
+        [
+            312,
+            8,
+            0,
+            166,
+            0,
+            "IMAGE"
+        ],
+        [
+            313,
+            166,
+            1,
+            167,
+            0,
+            "IMAGE"
         ]
     ],
     "groups": [
@@ -1386,10 +1638,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.4665073802097333,
+            "scale": 0.3186308177103567,
             "offset": [
-                -798.9712648290321,
-                -1477.9394598334154
+                160.56096346495383,
+                -285.74866425760916
             ]
         }
     },
