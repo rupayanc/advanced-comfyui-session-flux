@@ -41,7 +41,7 @@
     },
     "31": {
         "inputs": {
-            "seed": 173805153958770,
+            "seed": 173805153958771,
             "steps": 30,
             "cfg": 1,
             "sampler_name": "euler",
@@ -254,7 +254,7 @@
     },
     "155": {
         "inputs": {
-            "image": "clipspace/clipspace-mask-128364.png [input]",
+            "image": "IMG_20210110_114118 (1).jpg",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -264,7 +264,7 @@
     },
     "156": {
         "inputs": {
-            "image": "clipspace/clipspace-mask-152726.19999999925.png [input]",
+            "image": "xfit_black-white01.jpg",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -337,7 +337,7 @@
     },
     "162": {
         "inputs": {
-            "prompt": "face, hair",
+            "prompt": "chair",
             "threshold": 0.35000000000000003,
             "sam_model": [
                 "159",
