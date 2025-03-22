@@ -640,11 +640,11 @@
             "max_height": 768,
             "padding": 32,
             "image": [
-                "186",
+                "197",
                 0
             ],
             "mask": [
-                "186",
+                "197",
                 1
             ]
         },
@@ -678,16 +678,6 @@
         "class_type": "LoadImage",
         "_meta": {
             "title": "Load New Face"
-        }
-    },
-    "186": {
-        "inputs": {
-            "image": "clipspace/clipspace-mask-57858.png [input]",
-            "upload": "image"
-        },
-        "class_type": "LoadImage",
-        "_meta": {
-            "title": "Load Image"
         }
     },
     "187": {
@@ -737,7 +727,7 @@
     },
     "190": {
         "inputs": {
-            "prompt": "face, hair",
+            "prompt": "human",
             "threshold": 0.3,
             "sam_model": [
                 "191",
@@ -820,6 +810,28 @@
         "class_type": "PreviewImage",
         "_meta": {
             "title": "Preview Image"
+        }
+    },
+    "197": {
+        "inputs": {
+            "prompt": "face, hair",
+            "threshold": 0.3,
+            "sam_model": [
+                "191",
+                0
+            ],
+            "grounding_dino_model": [
+                "192",
+                0
+            ],
+            "image": [
+                "8",
+                0
+            ]
+        },
+        "class_type": "GroundingDinoSAMSegment (segment anything)",
+        "_meta": {
+            "title": "GroundingDinoSAMSegment (segment anything)"
         }
     }
 }
