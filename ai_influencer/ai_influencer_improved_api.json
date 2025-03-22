@@ -1,7 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": "front shot of a young man carrying a suitcase in a living room",
+            "text": "front shot of a young man holding a cup in a living room",
             "clip": [
                 "38",
                 0
@@ -41,7 +41,7 @@
     },
     "31": {
         "inputs": {
-            "seed": 173805153958783,
+            "seed": 173805153958791,
             "steps": 30,
             "cfg": 1,
             "sampler_name": "euler",
@@ -264,7 +264,7 @@
     },
     "156": {
         "inputs": {
-            "image": "delsey-chatelet-air-2.0-00167681015-01_1800x1800 (1).webp",
+            "image": "ComfyUI_temp_nucpe_00001_ (1).png",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -474,7 +474,7 @@
     },
     "172": {
         "inputs": {
-            "seed": 921237579149104,
+            "seed": 635412642607529,
             "steps": 12,
             "cfg": 1,
             "sampler_name": "euler",
@@ -696,7 +696,7 @@
     },
     "190": {
         "inputs": {
-            "prompt": "human",
+            "prompt": "full face, hair",
             "threshold": 0.3,
             "sam_model": [
                 "191",
@@ -718,7 +718,7 @@
     },
     "191": {
         "inputs": {
-            "model_name": "sam_vit_b_01ec64.pth",
+            "model_name": "sam_vit_l_0b3195.pth",
             "device_mode": "Prefer GPU"
         },
         "class_type": "SAMLoader",
@@ -728,7 +728,7 @@
     },
     "192": {
         "inputs": {
-            "model_name": "GroundingDINO_SwinT_OGC (694MB)"
+            "model_name": "GroundingDINO_SwinB (938MB)"
         },
         "class_type": "GroundingDinoModelLoader (segment anything)",
         "_meta": {
@@ -801,6 +801,18 @@
         "class_type": "GroundingDinoSAMSegment (segment anything)",
         "_meta": {
             "title": "GroundingDinoSAMSegment (segment anything)"
+        }
+    },
+    "203": {
+        "inputs": {
+            "images": [
+                "166",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
         }
     }
 }
