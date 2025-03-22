@@ -159,7 +159,7 @@
                 0
             ],
             "mask": [
-                "155",
+                "158",
                 1
             ]
         },
@@ -192,7 +192,7 @@
                 0
             ],
             "mask": [
-                "156",
+                "162",
                 1
             ]
         },
@@ -280,6 +280,93 @@
         "class_type": "LoadImage",
         "_meta": {
             "title": "Load Image"
+        }
+    },
+    "158": {
+        "inputs": {
+            "prompt": "face, hair",
+            "threshold": 0.35000000000000003,
+            "sam_model": [
+                "159",
+                0
+            ],
+            "grounding_dino_model": [
+                "160",
+                0
+            ],
+            "image": [
+                "155",
+                0
+            ]
+        },
+        "class_type": "GroundingDinoSAMSegment (segment anything)",
+        "_meta": {
+            "title": "GroundingDinoSAMSegment (segment anything)"
+        }
+    },
+    "159": {
+        "inputs": {
+            "model_name": "sam_vit_b_01ec64.pth",
+            "device_mode": "Prefer GPU"
+        },
+        "class_type": "SAMLoader",
+        "_meta": {
+            "title": "SAMLoader (Impact)"
+        }
+    },
+    "160": {
+        "inputs": {
+            "model_name": "GroundingDINO_SwinB (938MB)"
+        },
+        "class_type": "GroundingDinoModelLoader (segment anything)",
+        "_meta": {
+            "title": "GroundingDinoModelLoader (segment anything)"
+        }
+    },
+    "161": {
+        "inputs": {
+            "images": [
+                "158",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    },
+    "162": {
+        "inputs": {
+            "prompt": "face, hair",
+            "threshold": 0.35000000000000003,
+            "sam_model": [
+                "159",
+                0
+            ],
+            "grounding_dino_model": [
+                "160",
+                0
+            ],
+            "image": [
+                "156",
+                0
+            ]
+        },
+        "class_type": "GroundingDinoSAMSegment (segment anything)",
+        "_meta": {
+            "title": "GroundingDinoSAMSegment (segment anything)"
+        }
+    },
+    "163": {
+        "inputs": {
+            "images": [
+                "162",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
         }
     }
 }
