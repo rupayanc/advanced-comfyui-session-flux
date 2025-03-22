@@ -1,6 +1,6 @@
 {
-    "last_node_id": 203,
-    "last_link_id": 383,
+    "last_node_id": 206,
+    "last_link_id": 385,
     "nodes": [
         {
             "id": 6,
@@ -182,7 +182,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                173805153958791,
+                173805153958799,
                 "increment",
                 30,
                 1,
@@ -846,15 +846,15 @@
             "id": 158,
             "type": "ImageResize+",
             "pos": [
-                3175.28662109375,
-                1198.1141357421875
+                3201.540283203125,
+                1199.1947021484375
             ],
             "size": [
                 244.8402862548828,
                 218
             ],
             "flags": {},
-            "order": 34,
+            "order": 35,
             "mode": 0,
             "inputs": [
                 {
@@ -924,7 +924,7 @@
                 102
             ],
             "flags": {},
-            "order": 40,
+            "order": 41,
             "mode": 0,
             "inputs": [
                 {
@@ -943,7 +943,8 @@
                     "name": "IMAGE",
                     "type": "IMAGE",
                     "links": [
-                        304
+                        304,
+                        385
                     ],
                     "slot_index": 0
                 }
@@ -971,7 +972,7 @@
                 26
             ],
             "flags": {},
-            "order": 38,
+            "order": 39,
             "mode": 0,
             "inputs": [
                 {
@@ -1001,15 +1002,15 @@
             "id": 161,
             "type": "EmptyImage",
             "pos": [
-                3452.303466796875,
-                1351.5419921875
+                3528.06298828125,
+                1282.44677734375
             ],
             "size": [
                 210,
                 150
             ],
             "flags": {},
-            "order": 37,
+            "order": 38,
             "mode": 0,
             "inputs": [
                 {
@@ -1063,7 +1064,7 @@
                 58
             ],
             "flags": {},
-            "order": 41,
+            "order": 42,
             "mode": 0,
             "inputs": [
                 {
@@ -1103,7 +1104,7 @@
                 46
             ],
             "flags": {},
-            "order": 46,
+            "order": 48,
             "mode": 0,
             "inputs": [
                 {
@@ -1147,7 +1148,7 @@
                 138
             ],
             "flags": {},
-            "order": 43,
+            "order": 45,
             "mode": 0,
             "inputs": [
                 {
@@ -1223,7 +1224,7 @@
                 170
             ],
             "flags": {},
-            "order": 47,
+            "order": 49,
             "mode": 0,
             "inputs": [
                 {
@@ -1282,7 +1283,7 @@
                 102
             ],
             "flags": {},
-            "order": 36,
+            "order": 37,
             "mode": 0,
             "inputs": [
                 {
@@ -1410,7 +1411,7 @@
                 278.02349853515625
             ],
             "flags": {},
-            "order": 45,
+            "order": 47,
             "mode": 0,
             "inputs": [
                 {
@@ -1450,7 +1451,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                635412642607529,
+                310419181139894,
                 "randomize",
                 12,
                 1,
@@ -1473,7 +1474,7 @@
                 288.6927795410156
             ],
             "flags": {},
-            "order": 48,
+            "order": 50,
             "mode": 0,
             "inputs": [
                 {
@@ -1504,7 +1505,7 @@
                 340.9549255371094
             ],
             "flags": {},
-            "order": 44,
+            "order": 46,
             "mode": 0,
             "inputs": [
                 {
@@ -1553,7 +1554,7 @@
                 218
             ],
             "flags": {},
-            "order": 33,
+            "order": 34,
             "mode": 0,
             "inputs": [
                 {
@@ -1620,7 +1621,7 @@
                 194
             ],
             "flags": {},
-            "order": 35,
+            "order": 36,
             "mode": 0,
             "inputs": [
                 {
@@ -1691,7 +1692,7 @@
                 82
             ],
             "flags": {},
-            "order": 42,
+            "order": 44,
             "mode": 0,
             "inputs": [
                 {
@@ -1776,7 +1777,7 @@
                 314
             ],
             "flags": {},
-            "order": 32,
+            "order": 33,
             "mode": 0,
             "inputs": [
                 {
@@ -1861,7 +1862,7 @@
                 86.57552337646484
             ],
             "flags": {},
-            "order": 49,
+            "order": 51,
             "mode": 0,
             "inputs": [
                 {
@@ -1952,7 +1953,7 @@
                 380.39532470703125
             ],
             "flags": {},
-            "order": 50,
+            "order": 52,
             "mode": 0,
             "inputs": [
                 {
@@ -2085,7 +2086,7 @@
             },
             "widgets_values": [
                 "full face, hair",
-                0.3
+                0.35000000000000003
             ]
         },
         {
@@ -2100,7 +2101,7 @@
                 82
             ],
             "flags": {},
-            "order": 10,
+            "order": 11,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -2122,7 +2123,7 @@
                 "cnr_id": "comfyui-impact-pack"
             },
             "widgets_values": [
-                "sam_vit_l_0b3195.pth",
+                "sam_vit_b_01ec64.pth",
                 "Prefer GPU"
             ]
         },
@@ -2138,7 +2139,7 @@
                 59.566593170166016
             ],
             "flags": {},
-            "order": 11,
+            "order": 10,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -2316,7 +2317,9 @@
                 {
                     "name": "IMAGE",
                     "type": "IMAGE",
-                    "links": [],
+                    "links": [
+                        384
+                    ],
                     "slot_index": 0
                 },
                 {
@@ -2335,8 +2338,8 @@
                 "cnr_id": "comfyui_segment_anything"
             },
             "widgets_values": [
-                "face, hair",
-                0.3
+                "full face, hair",
+                0.35000000000000003
             ]
         },
         {
@@ -2416,21 +2419,77 @@
             "id": 203,
             "type": "PreviewImage",
             "pos": [
-                3920.176025390625,
-                1028.2108154296875
+                3804.85400390625,
+                1003.5494995117188
             ],
             "size": [
-                210,
-                246
+                343.96722412109375,
+                285.68133544921875
             ],
             "flags": {},
-            "order": 39,
+            "order": 40,
             "mode": 0,
             "inputs": [
                 {
                     "name": "images",
                     "type": "IMAGE",
                     "link": 383
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "PreviewImage"
+            }
+        },
+        {
+            "id": 204,
+            "type": "PreviewImage",
+            "pos": [
+                1883.94970703125,
+                1353.5670166015625
+            ],
+            "size": [
+                210,
+                246
+            ],
+            "flags": {},
+            "order": 32,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 384
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "PreviewImage"
+            }
+        },
+        {
+            "id": 205,
+            "type": "PreviewImage",
+            "pos": [
+                4229.0712890625,
+                1554.3614501953125
+            ],
+            "size": [
+                210,
+                246
+            ],
+            "flags": {},
+            "order": 43,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 385
                 }
             ],
             "outputs": [],
@@ -3081,6 +3140,22 @@
             203,
             0,
             "IMAGE"
+        ],
+        [
+            384,
+            197,
+            0,
+            204,
+            0,
+            "IMAGE"
+        ],
+        [
+            385,
+            159,
+            0,
+            205,
+            0,
+            "IMAGE"
         ]
     ],
     "groups": [
@@ -3166,10 +3241,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.3452271214393218,
+            "scale": 0.2853116706110144,
             "offset": [
-                75.53699234707678,
-                -957.2019407486733
+                467.6907494040229,
+                -232.97755906278167
             ]
         }
     },
