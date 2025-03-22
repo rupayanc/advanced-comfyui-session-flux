@@ -41,7 +41,7 @@
     },
     "31": {
         "inputs": {
-            "seed": 173805153958791,
+            "seed": 173805153958799,
             "steps": 30,
             "cfg": 1,
             "sampler_name": "euler",
@@ -474,7 +474,7 @@
     },
     "172": {
         "inputs": {
-            "seed": 635412642607529,
+            "seed": 310419181139894,
             "steps": 12,
             "cfg": 1,
             "sampler_name": "euler",
@@ -697,7 +697,7 @@
     "190": {
         "inputs": {
             "prompt": "full face, hair",
-            "threshold": 0.3,
+            "threshold": 0.35000000000000003,
             "sam_model": [
                 "191",
                 0
@@ -718,7 +718,7 @@
     },
     "191": {
         "inputs": {
-            "model_name": "sam_vit_l_0b3195.pth",
+            "model_name": "sam_vit_b_01ec64.pth",
             "device_mode": "Prefer GPU"
         },
         "class_type": "SAMLoader",
@@ -783,8 +783,8 @@
     },
     "197": {
         "inputs": {
-            "prompt": "face, hair",
-            "threshold": 0.3,
+            "prompt": "full face, hair",
+            "threshold": 0.35000000000000003,
             "sam_model": [
                 "191",
                 0
@@ -807,6 +807,30 @@
         "inputs": {
             "images": [
                 "166",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    },
+    "204": {
+        "inputs": {
+            "images": [
+                "197",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    },
+    "205": {
+        "inputs": {
+            "images": [
+                "159",
                 0
             ]
         },
