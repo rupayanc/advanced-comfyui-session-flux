@@ -190,26 +190,5 @@
       "SAMLoader"
     ],
     "cached": "False"
-  },
-  {
-    "name": "ComfyUI-AutoCropFaces",
-    "url": "https://github.com/liusida/ComfyUI-AutoCropFaces",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "Sida Liu",
-      "title": "ComfyUI-AutoCropFaces",
-      "id": "autocropfaces",
-      "reference": "https://github.com/liusida/ComfyUI-AutoCropFaces",
-      "files": [
-        "https://github.com/liusida/ComfyUI-AutoCropFaces"
-      ],
-      "install_type": "git-clone",
-      "description": "Use RetinaFace to detect and automatically crop faces."
-    },
-    "nodes": [],
-    "pip": [],
-    "apt": [],
-    "cached": "False"
   }
 ]
