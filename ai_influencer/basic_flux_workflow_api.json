@@ -31,7 +31,10 @@
     },
     "6": {
         "inputs": {
-            "text": "A rural Indian village during monsoon: torrential rain drenches vibrant paddy fields, where farmers in colorful raincoats work. Children splash in puddles, laughing, under a massive banyan tree sheltering a garlanded cow. In the background, a mist-shrouded, ancient temple looms under a stormy sky of swirling gray clouds and lightning, with petrichor and incense in the air",
+            "text": [
+                "15",
+                0
+            ],
             "clip": [
                 "11",
                 0
@@ -69,19 +72,6 @@
         "class_type": "VAEDecode",
         "_meta": {
             "title": "VAE Decode"
-        }
-    },
-    "9": {
-        "inputs": {
-            "filename_prefix": "ComfyUI",
-            "images": [
-                "8",
-                0
-            ]
-        },
-        "class_type": "SaveImage",
-        "_meta": {
-            "title": "Save Image"
         }
     },
     "10": {
@@ -137,6 +127,33 @@
         "class_type": "FluxGuidance",
         "_meta": {
             "title": "FluxGuidance"
+        }
+    },
+    "15": {
+        "inputs": {
+            "default_value": "",
+            "label": "Image Prompt"
+        },
+        "class_type": "FSLoadText",
+        "_meta": {
+            "title": "[FS]⚡Load Text (Input)"
+        }
+    },
+    "16": {
+        "inputs": {
+            "filename_prefix": "FlowScale",
+            "format": "png",
+            "label": "Output Image",
+            "quality": 95,
+            "lossless": false,
+            "images": [
+                "8",
+                0
+            ]
+        },
+        "class_type": "FSSaveImage",
+        "_meta": {
+            "title": "[FS]⚡Save Image (Output)"
         }
     }
 }
