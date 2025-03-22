@@ -483,10 +483,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "ComfyUI_AdvancedRefluxControl",
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
                 "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
                 "Node name for S&R": "ReduxAdvanced",
-                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl"
+                "cnr_id": "ComfyUI_AdvancedRefluxControl"
             },
             "widgets_values": [
                 3,
@@ -559,10 +559,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "ComfyUI_AdvancedRefluxControl",
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
                 "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
                 "Node name for S&R": "ReduxAdvanced",
-                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl"
+                "cnr_id": "ComfyUI_AdvancedRefluxControl"
             },
             "widgets_values": [
                 3,
@@ -635,10 +635,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "ComfyUI_AdvancedRefluxControl",
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
                 "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
                 "Node name for S&R": "ReduxAdvanced",
-                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl"
+                "cnr_id": "ComfyUI_AdvancedRefluxControl"
             },
             "widgets_values": [
                 3,
@@ -842,8 +842,8 @@
             "id": 158,
             "type": "ImageResize+",
             "pos": [
-                3842.103759765625,
-                2737.8037109375
+                3924.43505859375,
+                1576.6993408203125
             ],
             "size": [
                 244.8402862548828,
@@ -894,9 +894,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_essentials",
+                "aux_id": "cubiq/ComfyUI_essentials",
                 "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
-                "Node name for S&R": "ImageResize+"
+                "Node name for S&R": "ImageResize+",
+                "cnr_id": "comfyui_essentials"
             },
             "widgets_values": [
                 0,
@@ -911,8 +912,8 @@
             "id": 159,
             "type": "ImageConcanate",
             "pos": [
-                3528.271240234375,
-                2938.246337890625
+                4663.97265625,
+                1740.6375732421875
             ],
             "size": [
                 212.79220581054688,
@@ -944,9 +945,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-kjnodes",
+                "aux_id": "kijai/ComfyUI-KJNodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
-                "Node name for S&R": "ImageConcanate"
+                "Node name for S&R": "ImageConcanate",
+                "cnr_id": "comfyui-kjnodes"
             },
             "widgets_values": [
                 "right",
@@ -957,8 +959,8 @@
             "id": 160,
             "type": "MaskToImage",
             "pos": [
-                4115.314453125,
-                2860.08203125
+                4381.373046875,
+                1655.437255859375
             ],
             "size": [
                 202.61997985839844,
@@ -988,14 +990,15 @@
                 "cnr_id": "comfy-core",
                 "ver": "0.3.18",
                 "Node name for S&R": "MaskToImage"
-            }
+            },
+            "widgets_values": []
         },
         {
             "id": 161,
             "type": "EmptyImage",
             "pos": [
-                4111.54736328125,
-                2508.724853515625
+                4560.578125,
+                1450.6181640625
             ],
             "size": [
                 210,
@@ -1048,8 +1051,8 @@
             "id": 162,
             "type": "ImageToMask",
             "pos": [
-                3841.55029296875,
-                2992.227783203125
+                4961.62060546875,
+                1814.6422119140625
             ],
             "size": [
                 236.39999389648438,
@@ -1088,8 +1091,8 @@
             "id": 163,
             "type": "VAEDecode",
             "pos": [
-                3863.19140625,
-                1602.0618896484375
+                3933.158447265625,
+                536.7967529296875
             ],
             "size": [
                 203.7080078125,
@@ -1125,14 +1128,15 @@
                 "cnr_id": "comfy-core",
                 "ver": "0.3.18",
                 "Node name for S&R": "VAEDecode"
-            }
+            },
+            "widgets_values": []
         },
         {
             "id": 164,
             "type": "InpaintModelConditioning",
             "pos": [
-                3858.899169921875,
-                1424.953857421875
+                3920.375732421875,
+                334.0654602050781
             ],
             "size": [
                 210,
@@ -1207,8 +1211,8 @@
             "id": 165,
             "type": "ImageCrop",
             "pos": [
-                3862.516357421875,
-                1687.076416015625
+                3874.26416015625,
+                877.5606689453125
             ],
             "size": [
                 210,
@@ -1266,8 +1270,8 @@
             "id": 166,
             "type": "ImageConcanate",
             "pos": [
-                4112.05712890625,
-                2706.551025390625
+                4393.087890625,
+                1275.9085693359375
             ],
             "size": [
                 210,
@@ -1300,9 +1304,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-kjnodes",
+                "aux_id": "kijai/ComfyUI-KJNodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
-                "Node name for S&R": "ImageConcanate"
+                "Node name for S&R": "ImageConcanate",
+                "cnr_id": "comfyui-kjnodes"
             },
             "widgets_values": [
                 "right",
@@ -1313,8 +1318,8 @@
             "id": 167,
             "type": "Power Lora Loader (rgthree)",
             "pos": [
-                2516.975341796875,
-                1679.197265625
+                2601.678955078125,
+                537.1806640625
             ],
             "size": [
                 340.20001220703125,
@@ -1390,8 +1395,8 @@
             "id": 168,
             "type": "VAELoader",
             "pos": [
-                2533.962646484375,
-                1975.58837890625
+                2619.557861328125,
+                825.0276489257812
             ],
             "size": [
                 315,
@@ -1427,8 +1432,8 @@
             "id": 169,
             "type": "UNETLoader",
             "pos": [
-                2517.89111328125,
-                1317.8868408203125
+                2603.486328125,
+                167.32591247558594
             ],
             "size": [
                 315,
@@ -1464,8 +1469,8 @@
             "id": 170,
             "type": "DualCLIPLoader",
             "pos": [
-                2517.89111328125,
-                1487.425537109375
+                2603.486328125,
+                336.8646240234375
             ],
             "size": [
                 315,
@@ -1504,8 +1509,8 @@
             "id": 171,
             "type": "FluxGuidance",
             "pos": [
-                3857.299072265625,
-                1323.9356689453125
+                3715.62109375,
+                213.18612670898438
             ],
             "size": [
                 211.60000610351562,
@@ -1546,8 +1551,8 @@
             "id": 172,
             "type": "KSampler",
             "pos": [
-                4094.661376953125,
-                1392.2178955078125
+                4180.2578125,
+                241.65696716308594
             ],
             "size": [
                 246.20628356933594,
@@ -1609,8 +1614,8 @@
             "id": 173,
             "type": "PreviewImage",
             "pos": [
-                4534.29248046875,
-                2028.23046875
+                4619.888671875,
+                877.6698608398438
             ],
             "size": [
                 696.5767822265625,
@@ -1632,6 +1637,7 @@
                 "ver": "0.3.18",
                 "Node name for S&R": "PreviewImage"
             },
+            "widgets_values": [],
             "color": "#2a363b",
             "bgcolor": "#3f5159"
         },
@@ -1639,8 +1645,8 @@
             "id": 174,
             "type": "ImageAndMaskPreview",
             "pos": [
-                3517.88671875,
-                1573.1927490234375
+                5091.88623046875,
+                1401.533935546875
             ],
             "size": [
                 325.834716796875,
@@ -1671,9 +1677,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-kjnodes",
+                "aux_id": "kijai/ComfyUI-KJNodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
-                "Node name for S&R": "ImageAndMaskPreview"
+                "Node name for S&R": "ImageAndMaskPreview",
+                "cnr_id": "comfyui-kjnodes"
             },
             "widgets_values": [
                 0.5,
@@ -1687,8 +1694,8 @@
             "id": 175,
             "type": "ImageResize+",
             "pos": [
-                3529.85302734375,
-                2497.90234375
+                3677.16748046875,
+                1156.4368896484375
             ],
             "size": [
                 255.87393188476562,
@@ -1734,9 +1741,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_essentials",
+                "aux_id": "cubiq/ComfyUI_essentials",
                 "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
-                "Node name for S&R": "ImageResize+"
+                "Node name for S&R": "ImageResize+",
+                "cnr_id": "comfyui_essentials"
             },
             "widgets_values": [
                 1024,
@@ -1753,8 +1761,8 @@
             "id": 176,
             "type": "ResizeMask",
             "pos": [
-                3818.874267578125,
-                2493.291015625
+                4054.220947265625,
+                1198.09326171875
             ],
             "size": [
                 261.642333984375,
@@ -1807,9 +1815,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-kjnodes",
+                "aux_id": "kijai/ComfyUI-KJNodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
-                "Node name for S&R": "ResizeMask"
+                "Node name for S&R": "ResizeMask",
+                "cnr_id": "comfyui-kjnodes"
             },
             "widgets_values": [
                 512,
@@ -1823,8 +1832,8 @@
             "id": 177,
             "type": "ImpactGaussianBlurMask",
             "pos": [
-                3518.034912109375,
-                2798.219970703125
+                4736.3818359375,
+                1615.5599365234375
             ],
             "size": [
                 315,
@@ -1852,9 +1861,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-impact-pack",
+                "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
                 "ver": "8.8.1",
-                "Node name for S&R": "ImpactGaussianBlurMask"
+                "Node name for S&R": "ImpactGaussianBlurMask",
+                "cnr_id": "comfyui-impact-pack"
             },
             "widgets_values": [
                 30,
@@ -1865,8 +1875,8 @@
             "id": 178,
             "type": "ConditioningZeroOut",
             "pos": [
-                3522.91650390625,
-                1532.7630615234375
+                3694.466064453125,
+                414.465576171875
             ],
             "size": [
                 317.4000244140625,
@@ -1899,6 +1909,7 @@
                 "ver": "0.3.18",
                 "Node name for S&R": "ConditioningZeroOut"
             },
+            "widgets_values": [],
             "color": "#322",
             "bgcolor": "#533"
         },
@@ -1906,8 +1917,8 @@
             "id": 182,
             "type": "InpaintCrop",
             "pos": [
-                3522.32470703125,
-                2129.208740234375
+                3164.924072265625,
+                1150.8477783203125
             ],
             "size": [
                 443.4000244140625,
@@ -1961,9 +1972,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-inpaint-cropandstitch",
+                "aux_id": "lquesada/ComfyUI-Inpaint-CropAndStitch",
                 "ver": "1.0.0",
-                "Node name for S&R": "InpaintCrop"
+                "Node name for S&R": "InpaintCrop",
+                "cnr_id": "comfyui-inpaint-cropandstitch"
             },
             "widgets_values": [
                 0,
@@ -1990,8 +2002,8 @@
             "id": 183,
             "type": "InpaintStitch",
             "pos": [
-                3988.942138671875,
-                2129.7197265625
+                4131.57958984375,
+                1045.4742431640625
             ],
             "size": [
                 315,
@@ -2023,9 +2035,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-inpaint-cropandstitch",
+                "aux_id": "lquesada/ComfyUI-Inpaint-CropAndStitch",
                 "ver": "1.0.0",
-                "Node name for S&R": "InpaintStitch"
+                "Node name for S&R": "InpaintStitch",
+                "cnr_id": "comfyui-inpaint-cropandstitch"
             },
             "widgets_values": [
                 "bislerp"
@@ -2037,15 +2050,15 @@
             "id": 184,
             "type": "Note",
             "pos": [
-                3986.351318359375,
-                2247.802001953125
+                4167.59765625,
+                804.6226806640625
             ],
             "size": [
                 314.5233459472656,
                 179.145751953125
             ],
             "flags": {},
-            "order": 12,
+            "order": 13,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -2060,8 +2073,8 @@
             "id": 185,
             "type": "LoadImage",
             "pos": [
-                3026.296142578125,
-                2282.197021484375
+                3153.148193359375,
+                1510.26025390625
             ],
             "size": [
                 280.81500244140625,
@@ -2104,15 +2117,15 @@
             "id": 186,
             "type": "LoadImage",
             "pos": [
-                2943.171630859375,
-                1591.54833984375
+                3028.766845703125,
+                440.9874267578125
             ],
             "size": [
                 460.18505859375,
                 600.0362548828125
             ],
             "flags": {},
-            "order": 13,
+            "order": 12,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -2149,8 +2162,8 @@
             "id": 187,
             "type": "CLIPTextEncode",
             "pos": [
-                3516.213623046875,
-                1301.4405517578125
+                3334.80517578125,
+                165.28823852539062
             ],
             "size": [
                 332.5511169433594,
@@ -2183,7 +2196,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "Retain face. short hair with a slight smile without showing teeth"
+                "Retain face. short hair with a slight smile without showing teeth "
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -2192,8 +2205,8 @@
             "id": 188,
             "type": "SaveImage",
             "pos": [
-                4399.96240234375,
-                1348.5869140625
+                4485.55859375,
+                198.02598571777344
             ],
             "size": [
                 707.3912963867188,
@@ -2780,24 +2793,11 @@
             "flags": {}
         },
         {
-            "id": 4,
-            "title": "Image Processing",
-            "bounding": [
-                3508.66796875,
-                2048.23779296875,
-                846.89990234375,
-                1016.1436157226562
-            ],
-            "color": "#3f789e",
-            "font_size": 24,
-            "flags": {}
-        },
-        {
             "id": 5,
             "title": "Face Swapping",
             "bounding": [
-                2366.087646484375,
-                1188.3712158203125,
+                2451.682861328125,
+                37.8101806640625,
                 2922.646484375,
                 1953.60791015625
             ],
@@ -2809,10 +2809,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6727499949325618,
+            "scale": 0.6727499949325609,
             "offset": [
-                -2937.291889621625,
-                -1391.7064254284603
+                -3336.211362874147,
+                -86.03562540606151
             ]
         }
     },
