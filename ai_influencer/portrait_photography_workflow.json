@@ -180,7 +180,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                173805153958770,
+                173805153958771,
                 "increment",
                 30,
                 1,
@@ -432,7 +432,7 @@
                 234
             ],
             "flags": {},
-            "order": 17,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
@@ -500,8 +500,8 @@
             "id": 45,
             "type": "ReduxAdvanced",
             "pos": [
-                680.5107421875,
-                1000.8670043945312
+                679.5299682617188,
+                996.8673706054688
             ],
             "size": [
                 317.4000244140625,
@@ -725,7 +725,7 @@
                 314
             ],
             "flags": {},
-            "order": 10,
+            "order": 7,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -751,7 +751,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "clipspace/clipspace-mask-128364.png [input]",
+                "IMG_20210110_114118 (1).jpg",
                 "image"
             ]
         },
@@ -767,7 +767,7 @@
                 314
             ],
             "flags": {},
-            "order": 9,
+            "order": 8,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -793,7 +793,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "clipspace/clipspace-mask-152726.19999999925.png [input]",
+                "xfit_black-white01.jpg",
                 "image"
             ]
         },
@@ -809,7 +809,7 @@
                 314
             ],
             "flags": {},
-            "order": 6,
+            "order": 9,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -841,15 +841,15 @@
             "id": 158,
             "type": "GroundingDinoSAMSegment (segment anything)",
             "pos": [
-                334.53082275390625,
-                1820.8572998046875
+                432.54736328125,
+                1845.1064453125
             ],
             "size": [
                 352.79998779296875,
                 122
             ],
             "flags": {},
-            "order": 14,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -900,15 +900,15 @@
             "id": 159,
             "type": "SAMLoader",
             "pos": [
-                -92.94974517822266,
-                1795.9168701171875
+                1.2005641460418701,
+                1849.477294921875
             ],
             "size": [
                 315,
                 82
             ],
             "flags": {},
-            "order": 7,
+            "order": 10,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -935,15 +935,15 @@
             "id": 160,
             "type": "GroundingDinoModelLoader (segment anything)",
             "pos": [
-                -112.49395751953125,
-                1962.4251708984375
+                -14.477497100830078,
+                1986.67431640625
             ],
             "size": [
                 361.20001220703125,
                 58
             ],
             "flags": {},
-            "order": 8,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -970,15 +970,15 @@
             "id": 161,
             "type": "PreviewImage",
             "pos": [
-                412.9737243652344,
-                2075.3818359375
+                537.652099609375,
+                2120.765625
             ],
             "size": [
                 210,
-                26
+                246
             ],
             "flags": {},
-            "order": 16,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -992,21 +992,22 @@
                 "cnr_id": "comfy-core",
                 "ver": "0.3.15",
                 "Node name for S&R": "PreviewImage"
-            }
+            },
+            "widgets_values": []
         },
         {
             "id": 162,
             "type": "GroundingDinoSAMSegment (segment anything)",
             "pos": [
-                815.9778442382812,
-                1861.6619873046875
+                913.9943237304688,
+                1885.9111328125
             ],
             "size": [
                 352.79998779296875,
                 122
             ],
             "flags": {},
-            "order": 13,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -1049,7 +1050,7 @@
                 "Node name for S&R": "GroundingDinoSAMSegment (segment anything)"
             },
             "widgets_values": [
-                "face, hair",
+                "chair",
                 0.35000000000000003
             ]
         },
@@ -1057,15 +1058,15 @@
             "id": 163,
             "type": "PreviewImage",
             "pos": [
-                859.3844604492188,
-                2115.156982421875
+                959.3051147460938,
+                2076.361328125
             ],
             "size": [
                 210,
-                26
+                246
             ],
             "flags": {},
-            "order": 15,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -1079,7 +1080,8 @@
                 "cnr_id": "comfy-core",
                 "ver": "0.3.15",
                 "Node name for S&R": "PreviewImage"
-            }
+            },
+            "widgets_values": []
         }
     ],
     "links": [
@@ -1366,15 +1368,28 @@
             "color": "#3f789e",
             "font_size": 24,
             "flags": {}
+        },
+        {
+            "id": 4,
+            "title": "Segmentation",
+            "bounding": [
+                -152.3530731201172,
+                1764.494384765625,
+                1508.2645263671875,
+                655.5691528320312
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
         }
     ],
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.9090909090909091,
+            "scale": 0.4665073802097333,
             "offset": [
-                -54.37824358952358,
-                -1232.3682158036236
+                -798.9712648290321,
+                -1477.9394598334154
             ]
         }
     },
