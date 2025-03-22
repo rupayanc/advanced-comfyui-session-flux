@@ -449,36 +449,6 @@
             "title": "Image Concatenate"
         }
     },
-    "167": {
-        "inputs": {
-            "PowerLoraLoaderHeaderWidget": {
-                "type": "PowerLoraLoaderHeaderWidget"
-            },
-            "lora_1": {
-                "on": true,
-                "lora": "ace_plus/comfyui_portrait_lora64.safetensors",
-                "strength": 1
-            },
-            "lora_2": {
-                "on": false,
-                "lora": "FLUX.1-Turbo-Alpha.safetensors",
-                "strength": 1
-            },
-            "➕ Add Lora": "",
-            "model": [
-                "169",
-                0
-            ],
-            "clip": [
-                "170",
-                0
-            ]
-        },
-        "class_type": "Power Lora Loader (rgthree)",
-        "_meta": {
-            "title": "Power Lora Loader (rgthree)"
-        }
-    },
     "168": {
         "inputs": {
             "vae_name": "ae.safetensors"
@@ -532,7 +502,7 @@
             "scheduler": "normal",
             "denoise": 1,
             "model": [
-                "167",
+                "189",
                 0
             ],
             "positive": [
@@ -724,8 +694,8 @@
         "inputs": {
             "text": "Retain face. short hair with a slight smile without showing teeth",
             "clip": [
-                "170",
-                0
+                "189",
+                1
             ]
         },
         "class_type": "CLIPTextEncode",
@@ -744,6 +714,25 @@
         "class_type": "SaveImage",
         "_meta": {
             "title": "Save Image"
+        }
+    },
+    "189": {
+        "inputs": {
+            "lora_name": "ace_plus/comfyui_portrait_lora64.safetensors",
+            "strength_model": 1,
+            "strength_clip": 1,
+            "model": [
+                "169",
+                0
+            ],
+            "clip": [
+                "170",
+                0
+            ]
+        },
+        "class_type": "LoraLoader",
+        "_meta": {
+            "title": "Load LoRA"
         }
     }
 }
