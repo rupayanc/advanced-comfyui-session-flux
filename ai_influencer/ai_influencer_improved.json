@@ -1,6 +1,6 @@
 {
     "last_node_id": 202,
-    "last_link_id": 378,
+    "last_link_id": 382,
     "nodes": [
         {
             "id": 6,
@@ -14,13 +14,13 @@
                 171.21217346191406
             ],
             "flags": {},
-            "order": 18,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
                     "name": "clip",
                     "type": "CLIP",
-                    "link": 375
+                    "link": 381
                 }
             ],
             "outputs": [
@@ -40,7 +40,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "photograph of a young man carrying a suitcase in a living room"
+                "front shot of a young man carrying a suitcase in a living room"
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -57,7 +57,7 @@
                 46
             ],
             "flags": {},
-            "order": 30,
+            "order": 29,
             "mode": 0,
             "inputs": [
                 {
@@ -141,13 +141,13 @@
                 262
             ],
             "flags": {},
-            "order": 29,
+            "order": 28,
             "mode": 0,
             "inputs": [
                 {
                     "name": "model",
                     "type": "MODEL",
-                    "link": 373
+                    "link": 379
                 },
                 {
                     "name": "positive",
@@ -182,7 +182,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                173805153958778,
+                173805153958783,
                 "increment",
                 30,
                 1,
@@ -205,13 +205,13 @@
             "flags": {
                 "collapsed": true
             },
-            "order": 17,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
                     "name": "clip",
                     "type": "CLIP",
-                    "link": 374,
+                    "link": 380,
                     "slot_index": 0
                 }
             ],
@@ -257,7 +257,7 @@
                     "name": "MODEL",
                     "type": "MODEL",
                     "links": [
-                        371
+                        379
                     ],
                     "slot_index": 0
                 }
@@ -292,7 +292,9 @@
                     "name": "CLIP",
                     "type": "CLIP",
                     "links": [
-                        372
+                        380,
+                        381,
+                        382
                     ],
                     "slot_index": 0
                 }
@@ -321,7 +323,7 @@
                 58
             ],
             "flags": {},
-            "order": 28,
+            "order": 27,
             "mode": 0,
             "inputs": [
                 {
@@ -585,7 +587,7 @@
                 234
             ],
             "flags": {},
-            "order": 25,
+            "order": 26,
             "mode": 0,
             "inputs": [
                 {
@@ -696,7 +698,7 @@
                 488.1266174316406
             ],
             "flags": {},
-            "order": 31,
+            "order": 30,
             "mode": 0,
             "inputs": [
                 {
@@ -852,7 +854,7 @@
                 218
             ],
             "flags": {},
-            "order": 35,
+            "order": 34,
             "mode": 0,
             "inputs": [
                 {
@@ -922,7 +924,7 @@
                 102
             ],
             "flags": {},
-            "order": 40,
+            "order": 39,
             "mode": 0,
             "inputs": [
                 {
@@ -969,7 +971,7 @@
                 26
             ],
             "flags": {},
-            "order": 39,
+            "order": 38,
             "mode": 0,
             "inputs": [
                 {
@@ -1007,7 +1009,7 @@
                 150
             ],
             "flags": {},
-            "order": 38,
+            "order": 37,
             "mode": 0,
             "inputs": [
                 {
@@ -1061,7 +1063,7 @@
                 58
             ],
             "flags": {},
-            "order": 41,
+            "order": 40,
             "mode": 0,
             "inputs": [
                 {
@@ -1101,7 +1103,7 @@
                 46
             ],
             "flags": {},
-            "order": 46,
+            "order": 45,
             "mode": 0,
             "inputs": [
                 {
@@ -1145,7 +1147,7 @@
                 138
             ],
             "flags": {},
-            "order": 43,
+            "order": 42,
             "mode": 0,
             "inputs": [
                 {
@@ -1221,7 +1223,7 @@
                 170
             ],
             "flags": {},
-            "order": 47,
+            "order": 46,
             "mode": 0,
             "inputs": [
                 {
@@ -1280,7 +1282,7 @@
                 102
             ],
             "flags": {},
-            "order": 37,
+            "order": 36,
             "mode": 0,
             "inputs": [
                 {
@@ -1365,7 +1367,7 @@
                 58
             ],
             "flags": {},
-            "order": 26,
+            "order": 24,
             "mode": 0,
             "inputs": [
                 {
@@ -1407,7 +1409,7 @@
                 278.02349853515625
             ],
             "flags": {},
-            "order": 45,
+            "order": 44,
             "mode": 0,
             "inputs": [
                 {
@@ -1447,7 +1449,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                595663820221659,
+                921237579149104,
                 "randomize",
                 12,
                 1,
@@ -1470,7 +1472,7 @@
                 288.6927795410156
             ],
             "flags": {},
-            "order": 48,
+            "order": 47,
             "mode": 0,
             "inputs": [
                 {
@@ -1501,7 +1503,7 @@
                 340.9549255371094
             ],
             "flags": {},
-            "order": 44,
+            "order": 43,
             "mode": 0,
             "inputs": [
                 {
@@ -1550,7 +1552,7 @@
                 218
             ],
             "flags": {},
-            "order": 34,
+            "order": 33,
             "mode": 0,
             "inputs": [
                 {
@@ -1617,7 +1619,7 @@
                 194
             ],
             "flags": {},
-            "order": 36,
+            "order": 35,
             "mode": 0,
             "inputs": [
                 {
@@ -1688,7 +1690,7 @@
                 82
             ],
             "flags": {},
-            "order": 42,
+            "order": 41,
             "mode": 0,
             "inputs": [
                 {
@@ -1715,7 +1717,7 @@
                 "cnr_id": "comfyui-impact-pack"
             },
             "widgets_values": [
-                30,
+                50,
                 10
             ]
         },
@@ -1733,7 +1735,7 @@
             "flags": {
                 "collapsed": false
             },
-            "order": 27,
+            "order": 25,
             "mode": 0,
             "inputs": [
                 {
@@ -1773,7 +1775,7 @@
                 314
             ],
             "flags": {},
-            "order": 33,
+            "order": 32,
             "mode": 0,
             "inputs": [
                 {
@@ -1858,7 +1860,7 @@
                 86.57552337646484
             ],
             "flags": {},
-            "order": 49,
+            "order": 48,
             "mode": 0,
             "inputs": [
                 {
@@ -1906,7 +1908,7 @@
                 172.9056854248047
             ],
             "flags": {},
-            "order": 24,
+            "order": 22,
             "mode": 0,
             "inputs": [
                 {
@@ -1949,7 +1951,7 @@
                 380.39532470703125
             ],
             "flags": {},
-            "order": 50,
+            "order": 49,
             "mode": 0,
             "inputs": [
                 {
@@ -1982,7 +1984,7 @@
                 126
             ],
             "flags": {},
-            "order": 22,
+            "order": 19,
             "mode": 0,
             "inputs": [
                 {
@@ -2037,7 +2039,7 @@
                 129.3773956298828
             ],
             "flags": {},
-            "order": 15,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -2261,7 +2263,7 @@
                 246
             ],
             "flags": {},
-            "order": 16,
+            "order": 18,
             "mode": 0,
             "inputs": [
                 {
@@ -2290,7 +2292,7 @@
                 129.37229919433594
             ],
             "flags": {},
-            "order": 32,
+            "order": 31,
             "mode": 0,
             "inputs": [
                 {
@@ -2374,63 +2376,6 @@
             }
         },
         {
-            "id": 201,
-            "type": "LoraLoader",
-            "pos": [
-                -56.16876983642578,
-                627.4097290039062
-            ],
-            "size": [
-                315,
-                126
-            ],
-            "flags": {},
-            "order": 14,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "model",
-                    "type": "MODEL",
-                    "link": 371
-                },
-                {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 372
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "MODEL",
-                    "type": "MODEL",
-                    "links": [
-                        373
-                    ],
-                    "slot_index": 0
-                },
-                {
-                    "name": "CLIP",
-                    "type": "CLIP",
-                    "links": [
-                        374,
-                        375,
-                        376
-                    ],
-                    "slot_index": 1
-                }
-            ],
-            "properties": {
-                "cnr_id": "comfy-core",
-                "ver": "0.3.15",
-                "Node name for S&R": "LoraLoader"
-            },
-            "widgets_values": [
-                "Flux/amateurphoto-v6-forcu.safetensors",
-                1,
-                1
-            ]
-        },
-        {
             "id": 202,
             "type": "Reroute",
             "pos": [
@@ -2442,13 +2387,13 @@
                 26
             ],
             "flags": {},
-            "order": 19,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
                     "name": "",
                     "type": "*",
-                    "link": 376
+                    "link": 382
                 }
             ],
             "outputs": [
@@ -3053,54 +2998,6 @@
             "VAE"
         ],
         [
-            371,
-            37,
-            0,
-            201,
-            0,
-            "MODEL"
-        ],
-        [
-            372,
-            38,
-            0,
-            201,
-            1,
-            "CLIP"
-        ],
-        [
-            373,
-            201,
-            0,
-            31,
-            0,
-            "MODEL"
-        ],
-        [
-            374,
-            201,
-            1,
-            33,
-            0,
-            "CLIP"
-        ],
-        [
-            375,
-            201,
-            1,
-            6,
-            0,
-            "CLIP"
-        ],
-        [
-            376,
-            201,
-            1,
-            202,
-            0,
-            "*"
-        ],
-        [
             377,
             202,
             0,
@@ -3115,6 +3012,38 @@
             158,
             0,
             "IMAGE"
+        ],
+        [
+            379,
+            37,
+            0,
+            31,
+            0,
+            "MODEL"
+        ],
+        [
+            380,
+            38,
+            0,
+            33,
+            0,
+            "CLIP"
+        ],
+        [
+            381,
+            38,
+            0,
+            6,
+            0,
+            "CLIP"
+        ],
+        [
+            382,
+            38,
+            0,
+            202,
+            0,
+            "*"
         ]
     ],
     "groups": [
@@ -3200,10 +3129,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.4177248169415668,
+            "scale": 0.4594972986357317,
             "offset": [
-                -609.2751308898515,
-                -14.429576157448832
+                -2312.4208661488346,
+                -158.7142849301964
             ]
         }
     },
