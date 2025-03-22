@@ -1,7 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": " photograph of a young man sitting in a chair in a room looking into the camera ",
+            "text": "photograph of a young woman carrying a suitcase in a cyberpunk city",
             "clip": [
                 "38",
                 0
@@ -41,7 +41,7 @@
     },
     "31": {
         "inputs": {
-            "seed": 173805153958770,
+            "seed": 173805153958775,
             "steps": 30,
             "cfg": 1,
             "sampler_name": "euler",
@@ -254,7 +254,7 @@
     },
     "155": {
         "inputs": {
-            "image": "clipspace/clipspace-mask-128364.png [input]",
+            "image": "ComfyUI_00001_ (5).png",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -264,7 +264,7 @@
     },
     "156": {
         "inputs": {
-            "image": "clipspace/clipspace-mask-152726.19999999925.png [input]",
+            "image": "delsey-chatelet-air-2.0-00167681015-01_1800x1800 (1).webp",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -274,7 +274,7 @@
     },
     "157": {
         "inputs": {
-            "image": "empty-living-room-leds-color-blow-nobody-inside-living-room-led-lights-116241781.webp",
+            "image": "ComfyUI_00001_ (9).png",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -495,7 +495,7 @@
     },
     "172": {
         "inputs": {
-            "seed": 706562283627752,
+            "seed": 360278086219073,
             "steps": 12,
             "cfg": 1,
             "sampler_name": "euler",
@@ -640,7 +640,7 @@
             "max_height": 768,
             "padding": 32,
             "image": [
-                "197",
+                "8",
                 0
             ],
             "mask": [
@@ -672,7 +672,7 @@
     },
     "187": {
         "inputs": {
-            "text": "Retain face. short hair with a slight smile without showing teeth",
+            "text": "Retain face and hair",
             "clip": [
                 "189",
                 1
@@ -740,7 +740,7 @@
     "191": {
         "inputs": {
             "model_name": "sam_vit_b_01ec64.pth",
-            "device_mode": "AUTO"
+            "device_mode": "Prefer GPU"
         },
         "class_type": "SAMLoader",
         "_meta": {
