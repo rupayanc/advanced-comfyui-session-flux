@@ -1,6 +1,6 @@
 {
-    "last_node_id": 157,
-    "last_link_id": 296,
+    "last_node_id": 163,
+    "last_link_id": 306,
     "nodes": [
         {
             "id": 6,
@@ -14,7 +14,7 @@
                 171.21217346191406
             ],
             "flags": {},
-            "order": 9,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -57,7 +57,7 @@
                 46
             ],
             "flags": {},
-            "order": 16,
+            "order": 22,
             "mode": 0,
             "inputs": [
                 {
@@ -139,7 +139,7 @@
                 262
             ],
             "flags": {},
-            "order": 15,
+            "order": 21,
             "mode": 0,
             "inputs": [
                 {
@@ -203,7 +203,7 @@
             "flags": {
                 "collapsed": true
             },
-            "order": 10,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -320,7 +320,7 @@
                 58
             ],
             "flags": {},
-            "order": 14,
+            "order": 20,
             "mode": 0,
             "inputs": [
                 {
@@ -432,7 +432,7 @@
                 234
             ],
             "flags": {},
-            "order": 11,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -459,7 +459,7 @@
                     "name": "mask",
                     "type": "MASK",
                     "shape": 7,
-                    "link": 292
+                    "link": 301
                 }
             ],
             "outputs": [
@@ -508,7 +508,7 @@
                 234
             ],
             "flags": {},
-            "order": 12,
+            "order": 18,
             "mode": 0,
             "inputs": [
                 {
@@ -535,7 +535,7 @@
                     "name": "mask",
                     "type": "MASK",
                     "shape": 7,
-                    "link": 293
+                    "link": 306
                 }
             ],
             "outputs": [
@@ -584,7 +584,7 @@
                 234
             ],
             "flags": {},
-            "order": 13,
+            "order": 19,
             "mode": 0,
             "inputs": [
                 {
@@ -694,7 +694,7 @@
                 488.1266174316406
             ],
             "flags": {},
-            "order": 17,
+            "order": 23,
             "mode": 0,
             "inputs": [
                 {
@@ -725,7 +725,7 @@
                 314
             ],
             "flags": {},
-            "order": 6,
+            "order": 10,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -733,15 +733,15 @@
                     "name": "IMAGE",
                     "type": "IMAGE",
                     "links": [
-                        289
-                    ]
+                        289,
+                        299
+                    ],
+                    "slot_index": 0
                 },
                 {
                     "name": "MASK",
                     "type": "MASK",
-                    "links": [
-                        292
-                    ],
+                    "links": [],
                     "slot_index": 1
                 }
             ],
@@ -767,7 +767,7 @@
                 314
             ],
             "flags": {},
-            "order": 7,
+            "order": 9,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -775,16 +775,15 @@
                     "name": "IMAGE",
                     "type": "IMAGE",
                     "links": [
-                        290
+                        290,
+                        304
                     ],
                     "slot_index": 0
                 },
                 {
                     "name": "MASK",
                     "type": "MASK",
-                    "links": [
-                        293
-                    ],
+                    "links": [],
                     "slot_index": 1
                 }
             ],
@@ -810,7 +809,7 @@
                 314
             ],
             "flags": {},
-            "order": 8,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -837,6 +836,250 @@
                 "empty-living-room-leds-color-blow-nobody-inside-living-room-led-lights-116241781.webp",
                 "image"
             ]
+        },
+        {
+            "id": 158,
+            "type": "GroundingDinoSAMSegment (segment anything)",
+            "pos": [
+                334.53082275390625,
+                1820.8572998046875
+            ],
+            "size": [
+                352.79998779296875,
+                122
+            ],
+            "flags": {},
+            "order": 14,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "sam_model",
+                    "type": "SAM_MODEL",
+                    "link": 297
+                },
+                {
+                    "name": "grounding_dino_model",
+                    "type": "GROUNDING_DINO_MODEL",
+                    "link": 298
+                },
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 299
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        300
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": [
+                        301
+                    ],
+                    "slot_index": 1
+                }
+            ],
+            "properties": {
+                "aux_id": "storyicon/comfyui_segment_anything",
+                "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
+                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)"
+            },
+            "widgets_values": [
+                "face, hair",
+                0.35000000000000003
+            ]
+        },
+        {
+            "id": 159,
+            "type": "SAMLoader",
+            "pos": [
+                -92.94974517822266,
+                1795.9168701171875
+            ],
+            "size": [
+                315,
+                82
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "SAM_MODEL",
+                    "type": "SAM_MODEL",
+                    "links": [
+                        297,
+                        302
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
+                "ver": "28cd2f70b2cd74ff47261edacff60a4fd46a2d42",
+                "Node name for S&R": "SAMLoader"
+            },
+            "widgets_values": [
+                "sam_vit_b_01ec64.pth",
+                "Prefer GPU"
+            ]
+        },
+        {
+            "id": 160,
+            "type": "GroundingDinoModelLoader (segment anything)",
+            "pos": [
+                -112.49395751953125,
+                1962.4251708984375
+            ],
+            "size": [
+                361.20001220703125,
+                58
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "GROUNDING_DINO_MODEL",
+                    "type": "GROUNDING_DINO_MODEL",
+                    "links": [
+                        298,
+                        303
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "aux_id": "storyicon/comfyui_segment_anything",
+                "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
+                "Node name for S&R": "GroundingDinoModelLoader (segment anything)"
+            },
+            "widgets_values": [
+                "GroundingDINO_SwinB (938MB)"
+            ]
+        },
+        {
+            "id": 161,
+            "type": "PreviewImage",
+            "pos": [
+                412.9737243652344,
+                2075.3818359375
+            ],
+            "size": [
+                210,
+                26
+            ],
+            "flags": {},
+            "order": 16,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 300
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "PreviewImage"
+            }
+        },
+        {
+            "id": 162,
+            "type": "GroundingDinoSAMSegment (segment anything)",
+            "pos": [
+                815.9778442382812,
+                1861.6619873046875
+            ],
+            "size": [
+                352.79998779296875,
+                122
+            ],
+            "flags": {},
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "sam_model",
+                    "type": "SAM_MODEL",
+                    "link": 302
+                },
+                {
+                    "name": "grounding_dino_model",
+                    "type": "GROUNDING_DINO_MODEL",
+                    "link": 303
+                },
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 304
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        305
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": [
+                        306
+                    ],
+                    "slot_index": 1
+                }
+            ],
+            "properties": {
+                "aux_id": "storyicon/comfyui_segment_anything",
+                "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
+                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)"
+            },
+            "widgets_values": [
+                "face, hair",
+                0.35000000000000003
+            ]
+        },
+        {
+            "id": 163,
+            "type": "PreviewImage",
+            "pos": [
+                859.3844604492188,
+                2115.156982421875
+            ],
+            "size": [
+                210,
+                26
+            ],
+            "flags": {},
+            "order": 15,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 305
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "PreviewImage"
+            }
         }
     ],
     "links": [
@@ -993,22 +1236,6 @@
             "IMAGE"
         ],
         [
-            292,
-            155,
-            1,
-            44,
-            4,
-            "MASK"
-        ],
-        [
-            293,
-            156,
-            1,
-            45,
-            4,
-            "MASK"
-        ],
-        [
             294,
             37,
             0,
@@ -1031,6 +1258,86 @@
             33,
             0,
             "CLIP"
+        ],
+        [
+            297,
+            159,
+            0,
+            158,
+            0,
+            "SAM_MODEL"
+        ],
+        [
+            298,
+            160,
+            0,
+            158,
+            1,
+            "GROUNDING_DINO_MODEL"
+        ],
+        [
+            299,
+            155,
+            0,
+            158,
+            2,
+            "IMAGE"
+        ],
+        [
+            300,
+            158,
+            0,
+            161,
+            0,
+            "IMAGE"
+        ],
+        [
+            301,
+            158,
+            1,
+            44,
+            4,
+            "MASK"
+        ],
+        [
+            302,
+            159,
+            0,
+            162,
+            0,
+            "SAM_MODEL"
+        ],
+        [
+            303,
+            160,
+            0,
+            162,
+            1,
+            "GROUNDING_DINO_MODEL"
+        ],
+        [
+            304,
+            156,
+            0,
+            162,
+            2,
+            "IMAGE"
+        ],
+        [
+            305,
+            162,
+            0,
+            163,
+            0,
+            "IMAGE"
+        ],
+        [
+            306,
+            162,
+            1,
+            45,
+            4,
+            "MASK"
         ]
     ],
     "groups": [
@@ -1064,10 +1371,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.620921323059155,
+            "scale": 0.9090909090909091,
             "offset": [
-                242.57899572082536,
-                -1548.87435469574
+                -54.37824358952358,
+                -1232.3682158036236
             ]
         }
     },
