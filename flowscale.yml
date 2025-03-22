@@ -70,6 +70,15 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: false
+  - id: it3jtoeb179
+    name: portrait_photography_workflow_api.json
+    file: ai_influencer/portrait_photography_workflow_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: 9hg4vmadn3
     name: ai_influencer_improved.json
@@ -103,3 +112,7 @@ normal_workflows:
     name: flux_ace++faceswap_sebastiankamph-patreon_v3_(1).json
     file: ai_influencer/flux_ace++faceswap_sebastiankamph-patreon_v3_(1).json
     version: 3
+  - id: ajiofawxiw5
+    name: portrait_photography_workflow.json
+    file: ai_influencer/portrait_photography_workflow.json
+    version: 0
