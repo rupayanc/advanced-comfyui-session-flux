@@ -1,6 +1,6 @@
 {
-    "last_node_id": 197,
-    "last_link_id": 362,
+    "last_node_id": 198,
+    "last_link_id": 364,
     "nodes": [
         {
             "id": 6,
@@ -14,7 +14,7 @@
                 171.21217346191406
             ],
             "flags": {},
-            "order": 16,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -204,7 +204,7 @@
             "flags": {
                 "collapsed": true
             },
-            "order": 17,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
@@ -484,10 +484,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
+                "cnr_id": "ComfyUI_AdvancedRefluxControl",
                 "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
                 "Node name for S&R": "ReduxAdvanced",
-                "cnr_id": "ComfyUI_AdvancedRefluxControl"
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl"
             },
             "widgets_values": [
                 3,
@@ -560,10 +560,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
+                "cnr_id": "ComfyUI_AdvancedRefluxControl",
                 "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
                 "Node name for S&R": "ReduxAdvanced",
-                "cnr_id": "ComfyUI_AdvancedRefluxControl"
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl"
             },
             "widgets_values": [
                 3,
@@ -636,10 +636,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl",
+                "cnr_id": "ComfyUI_AdvancedRefluxControl",
                 "ver": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
                 "Node name for S&R": "ReduxAdvanced",
-                "cnr_id": "ComfyUI_AdvancedRefluxControl"
+                "aux_id": "kaibioinfo/ComfyUI_AdvancedRefluxControl"
             },
             "widgets_values": [
                 3,
@@ -735,7 +735,8 @@
                     "type": "IMAGE",
                     "links": [
                         289,
-                        345
+                        345,
+                        363
                     ],
                     "slot_index": 0
                 },
@@ -768,7 +769,7 @@
                 314
             ],
             "flags": {},
-            "order": 11,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -810,7 +811,7 @@
                 314
             ],
             "flags": {},
-            "order": 6,
+            "order": 7,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -842,8 +843,8 @@
             "id": 158,
             "type": "ImageResize+",
             "pos": [
-                3133.149169921875,
-                1135.8363037109375
+                3143.6416015625,
+                1229.835693359375
             ],
             "size": [
                 244.8402862548828,
@@ -856,7 +857,7 @@
                 {
                     "name": "image",
                     "type": "IMAGE",
-                    "link": 297
+                    "link": 364
                 },
                 {
                     "name": "height",
@@ -894,10 +895,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "cubiq/ComfyUI_essentials",
+                "cnr_id": "comfyui_essentials",
                 "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
                 "Node name for S&R": "ImageResize+",
-                "cnr_id": "comfyui_essentials"
+                "aux_id": "cubiq/ComfyUI_essentials"
             },
             "widgets_values": [
                 0,
@@ -945,10 +946,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "kijai/ComfyUI-KJNodes",
+                "cnr_id": "comfyui-kjnodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
                 "Node name for S&R": "ImageConcanate",
-                "cnr_id": "comfyui-kjnodes"
+                "aux_id": "kijai/ComfyUI-KJNodes"
             },
             "widgets_values": [
                 "right",
@@ -1304,10 +1305,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "kijai/ComfyUI-KJNodes",
+                "cnr_id": "comfyui-kjnodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
                 "Node name for S&R": "ImageConcanate",
-                "cnr_id": "comfyui-kjnodes"
+                "aux_id": "kijai/ComfyUI-KJNodes"
             },
             "widgets_values": [
                 "right",
@@ -1326,7 +1327,7 @@
                 58
             ],
             "flags": {},
-            "order": 10,
+            "order": 8,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1363,7 +1364,7 @@
                 82
             ],
             "flags": {},
-            "order": 8,
+            "order": 9,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1400,7 +1401,7 @@
                 122
             ],
             "flags": {},
-            "order": 9,
+            "order": 10,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1599,10 +1600,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "kijai/ComfyUI-KJNodes",
+                "cnr_id": "comfyui-kjnodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
                 "Node name for S&R": "ImageAndMaskPreview",
-                "cnr_id": "comfyui-kjnodes"
+                "aux_id": "kijai/ComfyUI-KJNodes"
             },
             "widgets_values": [
                 0.5,
@@ -1663,10 +1664,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "cubiq/ComfyUI_essentials",
+                "cnr_id": "comfyui_essentials",
                 "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
                 "Node name for S&R": "ImageResize+",
-                "cnr_id": "comfyui_essentials"
+                "aux_id": "cubiq/ComfyUI_essentials"
             },
             "widgets_values": [
                 1024,
@@ -1737,10 +1738,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "kijai/ComfyUI-KJNodes",
+                "cnr_id": "comfyui-kjnodes",
                 "ver": "1a4259f05206d7360be7a90145b5839d5b64d893",
                 "Node name for S&R": "ResizeMask",
-                "cnr_id": "comfyui-kjnodes"
+                "aux_id": "kijai/ComfyUI-KJNodes"
             },
             "widgets_values": [
                 512,
@@ -1783,10 +1784,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
+                "cnr_id": "comfyui-impact-pack",
                 "ver": "8.8.1",
                 "Node name for S&R": "ImpactGaussianBlurMask",
-                "cnr_id": "comfyui-impact-pack"
+                "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
             },
             "widgets_values": [
                 30,
@@ -1894,10 +1895,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "lquesada/ComfyUI-Inpaint-CropAndStitch",
+                "cnr_id": "comfyui-inpaint-cropandstitch",
                 "ver": "1.0.0",
                 "Node name for S&R": "InpaintCrop",
-                "cnr_id": "comfyui-inpaint-cropandstitch"
+                "aux_id": "lquesada/ComfyUI-Inpaint-CropAndStitch"
             },
             "widgets_values": [
                 0,
@@ -1957,10 +1958,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "lquesada/ComfyUI-Inpaint-CropAndStitch",
+                "cnr_id": "comfyui-inpaint-cropandstitch",
                 "ver": "1.0.0",
                 "Node name for S&R": "InpaintStitch",
-                "cnr_id": "comfyui-inpaint-cropandstitch"
+                "aux_id": "lquesada/ComfyUI-Inpaint-CropAndStitch"
             },
             "widgets_values": [
                 "bislerp"
@@ -1980,57 +1981,13 @@
                 179.145751953125
             ],
             "flags": {},
-            "order": 7,
+            "order": 11,
             "mode": 0,
             "inputs": [],
             "outputs": [],
             "properties": {},
             "widgets_values": [
                 "This update on the workflow adds cropping and stitching to improve quality even in faces that are further away. \nIncrease context_expand_pixels to get more area around your face or decrease to crop in closer."
-            ],
-            "color": "#432",
-            "bgcolor": "#653"
-        },
-        {
-            "id": 185,
-            "type": "LoadImage",
-            "pos": [
-                1823.3651123046875,
-                1434.94580078125
-            ],
-            "size": [
-                280.81500244140625,
-                415.40863037109375
-            ],
-            "flags": {},
-            "order": 15,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": [
-                        297
-                    ],
-                    "slot_index": 0
-                },
-                {
-                    "name": "MASK",
-                    "type": "MASK",
-                    "links": [],
-                    "slot_index": 1
-                }
-            ],
-            "title": "Load New Face",
-            "properties": {
-                "cnr_id": "comfy-core",
-                "ver": "0.3.18",
-                "Node name for S&R": "LoadImage"
-            },
-            "widgets_values": [
-                "IMG_20210110_114118 (1).jpg",
-                "image"
             ],
             "color": "#432",
             "bgcolor": "#653"
@@ -2123,7 +2080,7 @@
                 126
             ],
             "flags": {},
-            "order": 18,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -2178,7 +2135,7 @@
                 129.3773956298828
             ],
             "flags": {},
-            "order": 20,
+            "order": 19,
             "mode": 0,
             "inputs": [
                 {
@@ -2216,9 +2173,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
-                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)"
+                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "human",
@@ -2253,9 +2211,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
+                "cnr_id": "comfyui-impact-pack",
                 "ver": "6e3d07277bfc0817150c8daa2e3b6fc3595c9745",
-                "Node name for S&R": "SAMLoader"
+                "Node name for S&R": "SAMLoader",
+                "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
             },
             "widgets_values": [
                 "sam_vit_b_01ec64.pth",
@@ -2290,9 +2249,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
-                "Node name for S&R": "GroundingDinoModelLoader (segment anything)"
+                "Node name for S&R": "GroundingDinoModelLoader (segment anything)",
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "GroundingDINO_SwinT_OGC (694MB)"
@@ -2339,7 +2299,7 @@
                 129.37229919433594
             ],
             "flags": {},
-            "order": 19,
+            "order": 18,
             "mode": 0,
             "inputs": [
                 {
@@ -2377,9 +2337,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
-                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)"
+                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "object",
@@ -2465,13 +2426,64 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
-                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)"
+                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "face, hair",
                 0.3
+            ]
+        },
+        {
+            "id": 198,
+            "type": "AutoCropFaces",
+            "pos": [
+                1818.69287109375,
+                1385.427490234375
+            ],
+            "size": [
+                315,
+                198
+            ],
+            "flags": {},
+            "order": 20,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 363
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "face",
+                    "type": "IMAGE",
+                    "links": [
+                        364
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "CROP_DATA",
+                    "type": "CROP_DATA",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "liusida/ComfyUI-AutoCropFaces",
+                "ver": "b2139db9a8ffb4707832106a58f519bbd04e6118",
+                "Node name for S&R": "AutoCropFaces"
+            },
+            "widgets_values": [
+                1,
+                1.5,
+                0.45,
+                0,
+                50,
+                "1:1"
             ]
         }
     ],
@@ -2651,14 +2663,6 @@
             33,
             0,
             "CLIP"
-        ],
-        [
-            297,
-            185,
-            0,
-            158,
-            0,
-            "IMAGE"
         ],
         [
             298,
@@ -3091,6 +3095,22 @@
             182,
             0,
             "IMAGE"
+        ],
+        [
+            363,
+            155,
+            0,
+            198,
+            0,
+            "IMAGE"
+        ],
+        [
+            364,
+            198,
+            0,
+            158,
+            0,
+            "IMAGE"
         ]
     ],
     "groups": [
@@ -3176,10 +3196,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6115909044841515,
+            "scale": 0.45949729863572647,
             "offset": [
-                -719.211104440795,
-                -1059.8584274499108
+                -1248.4693539729549,
+                -847.3278528842602
             ]
         }
     },
