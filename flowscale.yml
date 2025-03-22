@@ -40,11 +40,28 @@ workflows:
   - id: vm2p15ib5rj
     name: basic_flux_workflow_api.json
     file: ai_influencer/basic_flux_workflow_api.json
-    version: 0
+    version: 1
     description: ''
-    inputs: []
-    outputs: []
+    inputs:
+      - path: 15.inputs.default_value
+        label: Image Prompt
+        parameter_name: default_value_92860
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+      - path: 16.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_46802
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+    outputs:
+      - label: Output Image
+        demo_type: image
     skip_preprocess: true
+    advancedConfig: false
   - id: 3l7slntb4ju
     name: flux_fill_api.json
     file: iterations/flux_fill_api.json
@@ -99,7 +116,7 @@ normal_workflows:
   - id: 9z5yqp4dso
     name: basic_flux_workflow.json
     file: ai_influencer/basic_flux_workflow.json
-    version: 0
+    version: 1
   - id: lf16xr49fbh
     name: flux_fill.json
     file: iterations/flux_fill.json
