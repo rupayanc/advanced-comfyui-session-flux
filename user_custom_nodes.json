@@ -50,27 +50,6 @@
     "cached": "False"
   },
   {
-    "name": "ACE_plus",
-    "url": "https://github.com/ali-vilab/ACE_plus",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "Unknown",
-      "title": "ACE_plus",
-      "files": [
-        "https://github.com/ali-vilab/ACE_plus"
-      ],
-      "install_type": "git-clone"
-    },
-    "nodes": "ACEPlusConditioning",
-    "apt": [],
-    "pip": [
-      "scepter"
-    ],
-    "preemptions": [],
-    "cached": "False"
-  },
-  {
     "name": "pythongosssss/ComfyUI-Custom-Scripts",
     "url": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts",
     "path": "custom_nodes",
