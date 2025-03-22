@@ -1,10 +1,10 @@
 {
     "6": {
         "inputs": {
-            "text": "photograph of a young man carrying a suitcase in a living room",
+            "text": "front shot of a young man carrying a suitcase in a living room",
             "clip": [
-                "201",
-                1
+                "38",
+                0
             ]
         },
         "class_type": "CLIPTextEncode",
@@ -41,14 +41,14 @@
     },
     "31": {
         "inputs": {
-            "seed": 173805153958778,
+            "seed": 173805153958783,
             "steps": 30,
             "cfg": 1,
             "sampler_name": "euler",
             "scheduler": "simple",
             "denoise": 1,
             "model": [
-                "201",
+                "37",
                 0
             ],
             "positive": [
@@ -73,8 +73,8 @@
         "inputs": {
             "text": "",
             "clip": [
-                "201",
-                1
+                "38",
+                0
             ]
         },
         "class_type": "CLIPTextEncode",
@@ -474,7 +474,7 @@
     },
     "172": {
         "inputs": {
-            "seed": 595663820221659,
+            "seed": 921237579149104,
             "steps": 12,
             "cfg": 1,
             "sampler_name": "euler",
@@ -576,7 +576,7 @@
     },
     "177": {
         "inputs": {
-            "kernel_size": 30,
+            "kernel_size": 50,
             "sigma": 10,
             "mask": [
                 "162",
@@ -685,8 +685,8 @@
                 0
             ],
             "clip": [
-                "201",
-                1
+                "38",
+                0
             ]
         },
         "class_type": "LoraLoader",
@@ -801,25 +801,6 @@
         "class_type": "GroundingDinoSAMSegment (segment anything)",
         "_meta": {
             "title": "GroundingDinoSAMSegment (segment anything)"
-        }
-    },
-    "201": {
-        "inputs": {
-            "lora_name": "Flux/amateurphoto-v6-forcu.safetensors",
-            "strength_model": 1,
-            "strength_clip": 1,
-            "model": [
-                "37",
-                0
-            ],
-            "clip": [
-                "38",
-                0
-            ]
-        },
-        "class_type": "LoraLoader",
-        "_meta": {
-            "title": "Load LoRA"
         }
     }
 }
