@@ -96,6 +96,42 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: false
+  - id: 68oxd0hla5m
+    name: ai_influencer_improved.json
+    description: ''
+    file: ai_influencer/ai_influencer_improved.json
+  - id: gl01lrzplyt
+    name: basic_flux_dev_workflow.json
+    description: ''
+    file: ai_influencer/basic_flux_dev_workflow.json
+  - id: qkkatdepsoe
+    name: basic_flux_workflow.json
+    description: ''
+    file: ai_influencer/basic_flux_workflow.json
+  - id: 0bzzhynthkvg
+    name: basic_redux_workflow.json
+    description: ''
+    file: ai_influencer/basic_redux_workflow.json
+  - id: o0qaf01k2g
+    name: flux_ace++faceswap_sebastiankamph-patreon_v3_(1).json
+    description: ''
+    file: ai_influencer/flux_ace++faceswap_sebastiankamph-patreon_v3_(1).json
+  - id: e49lia5o895
+    name: flux_fill_inpainting.json
+    description: ''
+    file: ai_influencer/flux_fill_inpainting.json
+  - id: 8kgbv4lvmdl
+    name: portrait_photography_workflow.json
+    description: ''
+    file: ai_influencer/portrait_photography_workflow.json
+  - id: pyk2fzov7ke
+    name: flux_fill.json
+    description: ''
+    file: iterations/flux_fill.json
+  - id: ao579deiztp
+    name: flux_redux.json
+    description: ''
+    file: iterations/flux_redux.json
 normal_workflows:
   - id: 9hg4vmadn3
     name: ai_influencer_improved.json
