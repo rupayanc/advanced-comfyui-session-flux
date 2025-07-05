@@ -133,39 +133,39 @@ workflows:
     description: ''
     file: iterations/flux_redux.json
 normal_workflows:
-  - id: 9hg4vmadn3
+  - id: zqiq7alro6
     name: ai_influencer_improved.json
     file: ai_influencer/ai_influencer_improved.json
     version: 24
-  - id: 6zfjrn7j0e9
+  - id: jfacaaz3gy
     name: basic_flux_dev_workflow.json
     file: ai_influencer/basic_flux_dev_workflow.json
     version: 2
-  - id: zwaiwcxw2j
+  - id: eka51vruubt
     name: basic_redux_workflow.json
     file: ai_influencer/basic_redux_workflow.json
     version: 0
-  - id: fbwskp29nev
+  - id: op8c9ysfl7f
     name: flux_fill_inpainting.json
     file: ai_influencer/flux_fill_inpainting.json
     version: 0
-  - id: 9z5yqp4dso
+  - id: vm2p15ib5rj
     name: basic_flux_workflow.json
     file: ai_influencer/basic_flux_workflow.json
     version: 1
-  - id: lf16xr49fbh
+  - id: 3l7slntb4ju
     name: flux_fill.json
     file: iterations/flux_fill.json
     version: 0
-  - id: jp3qatd8wo
+  - id: n47vdg9ft3r
     name: flux_redux.json
     file: iterations/flux_redux.json
     version: 2
-  - id: 1946ne1paio
+  - id: 6tourcrmk1j
     name: flux_ace++faceswap_sebastiankamph-patreon_v3_(1).json
     file: ai_influencer/flux_ace++faceswap_sebastiankamph-patreon_v3_(1).json
     version: 3
-  - id: ajiofawxiw5
+  - id: it3jtoeb179
     name: portrait_photography_workflow.json
     file: ai_influencer/portrait_photography_workflow.json
     version: 4
